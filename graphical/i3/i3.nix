@@ -17,6 +17,17 @@ in {
       enable = true;
       # i3 Configuration
       config = {
+      # i3 colors
+      colors = {
+        focused = {
+            border = "#f5c2e7";
+            background = "#f5c2e7";
+            text = "#1e1e2e";
+            indicator = "#f5c2e7";
+            childBorder = "#f5c2e7";
+        };
+      };
+
       # Bar Configuration
       bars = [
         {
