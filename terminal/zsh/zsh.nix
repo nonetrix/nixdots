@@ -21,6 +21,7 @@ in {
         enable = true;
         plugins = [
           { name = "catppuccin/zsh-syntax-highlighting"; }
+          { name = "jeffreytse/zsh-vi-mode"; }
         ];
       };
     };
