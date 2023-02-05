@@ -1,0 +1,2 @@
+# nixdots
+My NixOS configuration
