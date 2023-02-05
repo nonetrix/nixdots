@@ -17,6 +17,38 @@ in {
       enable = true;
       # i3 Configuration
       config = {
+      # Bar Configuration
+      bars = [
+        {
+          position = "top";
+          # Bar colors
+          colors = {
+            background = "#1e1e2e";
+            statusline = "#cdd6f4";
+            focusedWorkspace = {
+              border = "#b4befe";
+              background = "#f5c2e7";
+              text = "#1e1e2e";
+            };
+            activeWorkspace = {
+              border = "#b4befe";
+              background = "#5f676a";
+              text = "#cdd6f4";
+            };
+            inactiveWorkspace = {
+              border = "#6c7086";
+              background = "#302d41";
+              text = "#cdd6f4";
+            };
+            urgentWorkspace = {
+              border = "#eba0ac";
+              background = "#fab387";
+              text = "#1e1e2e";
+            };
+          };
+        }
+      ];
+
       startup = [
         {
           command = "flameshot";
@@ -39,6 +71,7 @@ in {
           # Bindings to start various programs
           "${global.mod}+Return" = "exec alacritty";
           "${global.mod}+b" = "exec firefox";
+          "Print" = "exec flameshot gui";
 
           # Window movement keys
           "${global.mod}+h" = "focus left";
