@@ -20,11 +20,14 @@ in {
       <home-manager/nixos>
       ./hardware-configuration.nix
       ./terminal/zsh/zsh.nix
+      ./terminal/unconfigured.nix
       ./graphical/alacritty/alacritty.nix
       ./graphical/gtk/gtk.nix
       ./graphical/i3/i3.nix
       ./graphical/picom/picom.nix
       ./graphical/qt/qt.nix
+      ./graphical/fonts/fonts.nix
+      ./graphical/unconfigured.nix
       ./misc/hosts/hosts.nix
       ./services/pipewire/pipewire.nix
       ./services/xorg/xorg.nix
@@ -72,27 +75,8 @@ in {
 
   # List of system packages to be installed
   environment.systemPackages = with pkgs; [
-     wget
-     fzf
-     git
-     bottom
-     firefox
-     flameshot
-     neofetch
-     tree
-     alsa-utils
-     playerctl
-     pavucontrol
-     dconf
-     xwallpaper
-     xorg.xkill
-     killall
-     xdg-user-dirs
-     qt5ct
      libsForQt5.breeze-qt5
-     libsForQt5.dolphin
      papirus-icon-theme
-     vscodium
   ];
 
   # The version this configuration was made in
