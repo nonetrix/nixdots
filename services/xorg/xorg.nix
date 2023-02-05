@@ -8,6 +8,9 @@ in {
       enable = true;
       layout = "us";
       xkbVariant = "";
+      windowManager.i3 = {
+        enable = true;
+      };
     };
   };
 }
