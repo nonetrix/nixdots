@@ -16,29 +16,13 @@ in {
       enable = true;
       initExtraFirst = "neofetch"; 
       enableSyntaxHighlighting = true;
+      enableAutosuggestions = true;
       zplug = {
         enable = true;
         plugins = [
-          { name = "zsh-users/zsh-autosuggestions"; }
+          { name = "catppuccin/zsh-syntax-highlighting"; }
         ];
       };
     };
   };
 }
-
-
-#  home-manager.users.${username} = { pkgs, ...}: {
-#   home.stateVersion = "22.11";
-
-#   programs.zsh = {
-#     enable = true;
-#     initExtraFirst = "neofetch"; 
-#     enableSyntaxHighlighting = true;
-#     zplug = {
-#         enable = true;
-#         plugins = [
-#           { name = "zsh-users/zsh-autosuggestions"; }
-#         ];
-#     };
-#   };
-# };
