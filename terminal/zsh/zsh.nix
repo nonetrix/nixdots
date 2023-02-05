@@ -12,6 +12,18 @@ in {
   home-manager.users.${global.username} = { pkgs, ...}: {
     # Version this file was written in
     home.stateVersion = "22.11";
+
+    # Starship configuration
+    programs.starship = {
+      enable = true;
+    };
+
+    # Zoxide configuration
+    programs.zoxide = {
+      enable = true;
+    };
+
+    # Zsh configuration
     programs.zsh = {
       enable = true;
       initExtraFirst = "neofetch"; 

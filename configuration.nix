@@ -20,7 +20,6 @@ in {
       <home-manager/nixos>
       ./hardware-configuration.nix
       ./terminal/zsh/zsh.nix
-      ./terminal/starship/starship.nix
       ./graphical/alacritty/alacritty.nix
       ./graphical/gtk/gtk.nix
       ./graphical/i3/i3.nix
