@@ -20,6 +20,7 @@ in {
       <home-manager/nixos>
       ./hardware-configuration.nix
       ./terminal/zsh/zsh.nix
+      ./terminal/nvim/nvim.nix
       ./terminal/unconfigured.nix
       ./graphical/alacritty/alacritty.nix
       ./graphical/tk-themes/gtk/gtk.nix
