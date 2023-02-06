@@ -12,6 +12,61 @@ in {
   home-manager.users.${global.username} = { pkgs, ...}: {
     # Version this file was written in
     home.stateVersion = "22.11";
+
+    programs.i3status-rust = {
+
+    enable = true;
+    # i3status-rust configuration
+    bars = {
+      top = {
+        settings = {
+          theme = {
+            overrides = {
+              idle_bg = "#1e1e2e";
+              idle_fg = "#cdd6f4";
+
+              separator_bg = "#1e1e2e";
+              separator_fg = "#cdd6f4";
+            };
+          };
+        };
+        blocks = [
+          {
+            block = "disk_space";
+            path = "/";
+            alias = "/";
+            info_type = "available";
+            unit = "GB";
+            interval = 60;
+            warning = 20.0;
+            alert = 10.0;
+          }
+          {
+            block = "memory";
+            display_type = "memory";
+            format_mem = "{mem_used_percents}";
+          }
+          {
+            label = "GTX 1080";
+            block = "nvidia_gpu";
+            show_utilization = true;
+            show_temperature = true;
+            show_memory = true;
+          }
+          {
+            block = "cpu";
+            interval = 1;
+          }
+          { block = "sound"; }
+          {
+            block = "time";
+            interval = 60;
+            format = "%a %d/%m %k:%M %p";
+          }
+       ];
+      };
+    };
+  };
     
     xsession.windowManager.i3 = {
       enable = true;
@@ -32,6 +87,7 @@ in {
       bars = [
         {
           position = "top";
+          statusCommand = "${pkgs.i3status-rust}/bin/i3status-rs ~/.config/i3status-rust/config-top.toml";
           # Bar colors
           colors = {
             background = "#1e1e2e";
