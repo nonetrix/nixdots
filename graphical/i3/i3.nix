@@ -149,6 +149,14 @@ in {
       ];
 
         keybindings = {
+          
+        "${global.mod}+Ctrl+l" = "resize shrink width 1 px or 1 ppt";
+        "${global.mod}+Ctrl+j" = "resize grow height 1 px or 1 ppt";
+        "${global.mod}+Ctrl+k" = "resize shrink height 1 px or 1 ppt";
+        "${global.mod}+Ctrl+h" = "resize grow width 1 px or 1 ppt";
+        "${global.mod}+Escape" = "mode default";
+      
+
           # Bindings to start various programs
           "${global.mod}+Return" = "exec alacritty";
           "${global.mod}+b" = "exec firefox";
@@ -217,6 +225,8 @@ in {
             XF86AudioRaiseVolume   = "exec amixer -c 1 set Master 1%+";
             XF86AudioMute          = "exec amixer -c 1 set Master 0%";
         };
+
+       
       };
     };
   };
