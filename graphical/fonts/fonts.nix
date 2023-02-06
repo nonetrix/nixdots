@@ -2,7 +2,7 @@
 {
     nixpkgs.config.joypixels.acceptLicense = true;
 
-    environment.systemPackages = with pkgs; [
+    fonts.fonts = with pkgs; [
         noto-fonts
         noto-fonts-extra
         noto-fonts-cjk-sans
