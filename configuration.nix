@@ -74,6 +74,14 @@ in {
   # Allow installing packages that are not free
   nixpkgs.config.allowUnfree = true;
 
+  nix.settings.auto-optimise-store = true;
+  
+  nix.gc = {
+    automatic = true;
+    dates = "weekly";
+    options = "--delete-older-than 30d";
+  };
+
   # The version this configuration was made in
   system.stateVersion = "22.11"; 
 }
