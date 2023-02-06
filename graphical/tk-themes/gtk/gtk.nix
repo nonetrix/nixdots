@@ -23,7 +23,13 @@ in {
         name = "Papirus-Dark";
         package = pkgs.papirus-icon-theme;
       };
-    
+
+    # Cursor themes
+    cursorTheme = {
+      name = "Breeze";
+      package = pkgs.libsForQt5.breeze-qt5;
+    };
+
       # Theme configuration
       theme = {
         name = "Catppuccin-Pink-Dark";
