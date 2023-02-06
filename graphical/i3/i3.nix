@@ -165,6 +165,14 @@ in {
           "${global.mod}+Shift+k" = "move up";
           "${global.mod}+Shift+l" = "move right";
 
+          "${global.mod}+z" = "split h";
+          "${global.mod}+x" = "split v";
+
+          "${global.mod}+t" = "layout tabbed";
+          "${global.mod}+s" = "layout stacking";
+
+          "${global.mod}+space" = "floating toggle";
+
           # Task managment
           "${global.mod}+c" = "kill";
 
