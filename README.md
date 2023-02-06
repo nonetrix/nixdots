@@ -16,7 +16,7 @@
 ## This is extrememly WIP and mostly intended for myself and my hardware e.g. having a NVIDIA GPU, this may change however.
 
 ## TODO:
-- Look into if statements for things like enabling NVIDIA GPU monitor on the status bar
+- Look into if statements for things like enabling NVIDIA GPU monitor on the status bar, propritery software etc.
 - Move to flakes
 - Write config for server and phone via termux fork
 - Add install instructions
@@ -40,6 +40,7 @@
 - Add neovim config
 - Configure pipewire for now latency audio
 - Add sway config and make sure it has needed kernel options to work on NVIDIA(poorly)
+- Setup Japanese and Russian input
 - Get a AMD GPU
 - Get a life
 - Get goth doomer NixOS user trad gf
