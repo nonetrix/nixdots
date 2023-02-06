@@ -7,6 +7,7 @@
         noto-fonts-extra
         noto-fonts-cjk-sans
         noto-fonts-cjk-serif
+        (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
         # Note this font is propritery, however it's just a font ¯\_(ツ)_/¯
         joypixels
     ];
