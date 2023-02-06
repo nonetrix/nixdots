@@ -13,8 +13,6 @@
         playerctl
         dconf
         cava
-        xwallpaper
-        xorg.xkill
         killall
         xdg-user-dirs
     ];

@@ -1,7 +1,11 @@
 { config, pkgs, ... }:
-let
-  global = import ./global-var.nix;
-in {
+{
+  environment.systemPackages = with pkgs; [
+    xorg.xkill
+    xwallpaper
+    unclutter
+  ];
+
   services = {
     # XOrg configuration
     xserver = {
