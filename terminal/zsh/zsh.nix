@@ -8,6 +8,10 @@ in {
     <home-manager/nixos>
   ];
 
+  environment.systemPackages = with pkgs; [
+    thefuck
+  ];
+
   # Configuration for the user specified in the global-var file
   home-manager.users.${global.username} = { pkgs, ...}: {
     # Version this file was written in
@@ -26,7 +30,10 @@ in {
     # Zsh configuration
     programs.zsh = {
       enable = true;
-      initExtraFirst = "neofetch"; 
+      initExtraFirst = ''
+        neofetch
+        eval $(thefuck --alias)
+      ''; 
       enableSyntaxHighlighting = true;
       enableAutosuggestions = true;
       zplug = {
