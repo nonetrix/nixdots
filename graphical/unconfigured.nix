@@ -9,5 +9,6 @@
         pavucontrol
         firefox
         flameshot
+        anki
     ];
 }
