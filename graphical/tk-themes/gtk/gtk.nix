@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
 let 
   # Import the global variables file
-  global = import ../../global-var.nix;
+  global = import ../../../global-var.nix;
 
 in {
   imports = [

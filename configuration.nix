@@ -22,10 +22,11 @@ in {
       ./terminal/zsh/zsh.nix
       ./terminal/unconfigured.nix
       ./graphical/alacritty/alacritty.nix
-      ./graphical/gtk/gtk.nix
+      ./graphical/tk-themes/gtk/gtk.nix
+      ./graphical/tk-themes/qt/qt.nix
+      ./graphical/tk-themes/theme.nix
       ./graphical/i3/i3.nix
       ./graphical/picom/picom.nix
-      ./graphical/qt/qt.nix
       ./graphical/fonts/fonts.nix
       ./graphical/unconfigured.nix
       ./misc/hosts/hosts.nix
@@ -72,12 +73,6 @@ in {
 
   # Allow installing packages that are not free
   nixpkgs.config.allowUnfree = true;
-
-  # List of system packages to be installed
-  environment.systemPackages = with pkgs; [
-     libsForQt5.breeze-qt5
-     papirus-icon-theme
-  ];
 
   # The version this configuration was made in
   system.stateVersion = "22.11"; 
