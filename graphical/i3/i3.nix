@@ -25,6 +25,15 @@ in {
               idle_bg = "#1e1e2e";
               idle_fg = "#cdd6f4";
 
+              good_bg = "#1e1e2e";
+              good_fg = "#a6e3a1";
+
+              warning_bg = "#1e1e2e";
+              warning_fg = "#fab387";
+
+              critical_bg = "#1e1e2e";
+              critical_fg = "#f38ba8";
+
               separator_bg = "#1e1e2e";
               separator_fg = "#cdd6f4";
             };
