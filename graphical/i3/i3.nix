@@ -141,6 +141,11 @@ in {
           always = true;
           notification = false;
         }
+        {
+          command = "unclutter -idle 5";
+          always = true;
+          notification = false;
+        }
       ];
 
         keybindings = {
