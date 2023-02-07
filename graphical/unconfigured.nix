@@ -9,6 +9,7 @@
         pavucontrol
         firefox
         flameshot
-        anki
+        anki-bin
+        freetube
     ];
 }
