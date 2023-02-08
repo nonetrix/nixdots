@@ -29,10 +29,12 @@ in {
       ./graphical/i3/i3.nix
       ./graphical/picom/picom.nix
       ./graphical/fonts/fonts.nix
+      ./graphical/virt-manager/virt-manager.nix
       ./graphical/unconfigured.nix
       ./misc/hosts/hosts.nix
       ./services/pipewire/pipewire.nix
       ./services/xorg/xorg.nix
+      ./services/polkit/polkit.nix
     ];
 
   # Enable boot loader and set boot mount point
