@@ -35,6 +35,7 @@ in {
       ./services/pipewire/pipewire.nix
       ./services/xorg/xorg.nix
       ./services/polkit/polkit.nix
+      ./lanuage-support/keyboard/Japanese/mozc.nix
     ];
 
   # Enable boot loader and set boot mount point

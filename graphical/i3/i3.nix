@@ -151,6 +151,11 @@ in {
           always = true;
           notification = false;
         }
+        {
+          command = "exec fcitx5 -d";
+          always = true;
+          notification = false;
+        }
       ];
 
         keybindings = {
