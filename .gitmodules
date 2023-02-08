@@ -1,0 +1,6 @@
+[submodule "color-schemes/catppuccin/alacritty"]
+	path = color-schemes/catppuccin/alacritty
+	url = https://github.com/catppuccin/alacritty
+[submodule "color-schemes/catppuccin/rofi"]
+	path = color-schemes/catppuccin/rofi
+	url = https://github.com/catppuccin/rofi

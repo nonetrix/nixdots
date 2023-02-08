@@ -8,6 +8,11 @@ in {
     <home-manager/nixos>
   ];
 
+  environment.systemPackages = with pkgs; [
+    dmenu
+  ];
+
+
   # Configuration for the user specified in the global-var file
   home-manager.users.${global.username} = { pkgs, ...}: {
     # Version this file was written in
@@ -160,6 +165,7 @@ in {
           # Bindings to start various programs
           "${global.mod}+Return" = "exec alacritty";
           "${global.mod}+b" = "exec firefox";
+          "${global.mod}+r" = "exec dmenu_run -nb \"#1e1e2e\" -nf \"#cdd6f4\" -sb \"#f5c2e7\" -sf \"#cdd6f4\"";
           "Print" = "exec flameshot gui";
 
           # Window movement keys
