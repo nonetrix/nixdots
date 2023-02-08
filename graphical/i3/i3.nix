@@ -163,9 +163,9 @@ in {
       
 
           # Bindings to start various programs
-          "${global.mod}+Return" = "exec alacritty";
+          "${global.mod}+Return" = "exec --no-startup-id alacritty";
           "${global.mod}+b" = "exec firefox";
-          "${global.mod}+r" = "exec dmenu_run -nb \"#1e1e2e\" -nf \"#cdd6f4\" -sb \"#f5c2e7\" -sf \"#cdd6f4\"";
+          "${global.mod}+r" = "exec --no-startup-id dmenu_run -nb \"#1e1e2e\" -nf \"#cdd6f4\" -sb \"#f5c2e7\" -sf \"#cdd6f4\"";
           "Print" = "exec flameshot gui";
 
           # Window movement keys
@@ -224,12 +224,12 @@ in {
             "move container to workspace number 10";
 
             # Media keys
-            XF86AudioPause         = "exec playerctl play-pause";
-            XF86AudioNext          = "exec playerctl next";
-            XF86AudioPrev          = "exec playerctl previous";
-            XF86AudioLowerVolume   = "exec amixer -c 1 set Master 1%-";
-            XF86AudioRaiseVolume   = "exec amixer -c 1 set Master 1%+";
-            XF86AudioMute          = "exec amixer -c 1 set Master 0%";
+            XF86AudioPause         = "exec --no-startup-id playerctl play-pause";
+            XF86AudioNext          = "exec --no-startup-id playerctl next";
+            XF86AudioPrev          = "exec --no-startup-id playerctl previous";
+            XF86AudioLowerVolume   = "exec --no-startup-id amixer -c 1 set Master 1%-";
+            XF86AudioRaiseVolume   = "exec --no-startup-id amixer -c 1 set Master 1%+";
+            XF86AudioMute          = "exec --no-startup-id amixer -c 1 set Master 0%";
         };
 
        
