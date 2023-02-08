@@ -200,7 +200,6 @@ in {
           "${global.mod}+7" = "workspace number 7";
           "${global.mod}+8" = "workspace number 8";
           "${global.mod}+9" = "workspace number 9";
-          "${global.mod}+0" = "workspace number 10";
 
           "${global.mod}+Shift+1" =
             "move container to workspace number 1";
