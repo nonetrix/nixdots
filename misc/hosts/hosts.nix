@@ -5,8 +5,8 @@
     # List of hosts file URLs
     hostsList = [
       "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling/hosts"
-      "https://www.github.developerdan.com/hosts/lists/dating-services-extended.txt
-      "https://www.github.developerdan.com/hosts/lists/amp-hosts-extended.txt""
+      "https://www.github.developerdan.com/hosts/lists/dating-services-extended.txt"
+      "https://www.github.developerdan.com/hosts/lists/amp-hosts-extended.txt"
       "https://blocklistproject.github.io/Lists/facebook.txt"
       "https://blocklistproject.github.io/Lists/tiktok.txt"
       "https://blocklistproject.github.io/Lists/abuse.txt"
