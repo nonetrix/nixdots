@@ -220,8 +220,6 @@ in {
             "move container to workspace number 8";
           "${global.mod}+Shift+9" =
             "move container to workspace number 9";
-          "${global.mod}+Shift+0" =
-            "move container to workspace number 10";
 
             # Media keys
             XF86AudioPause         = "exec --no-startup-id playerctl play-pause";
@@ -231,8 +229,6 @@ in {
             XF86AudioRaiseVolume   = "exec --no-startup-id amixer -c 1 set Master 1%+";
             XF86AudioMute          = "exec --no-startup-id amixer -c 1 set Master 0%";
         };
-
-       
       };
     };
   };
