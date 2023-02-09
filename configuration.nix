@@ -34,8 +34,10 @@ in {
       ./graphical/picom/picom.nix
       ./graphical/fonts/fonts.nix
       ./graphical/virt-manager/virt-manager.nix
+      ./graphical/openrgb/openrgb.nix
       ./graphical/unconfigured.nix
       ./misc/hosts/hosts.nix
+      ./misc/udev/udev.nix
       ./misc/default-programs/default-programs.nix
       ./services/pipewire/pipewire.nix
       ./services/xorg/xorg.nix

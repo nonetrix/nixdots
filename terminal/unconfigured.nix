@@ -15,5 +15,6 @@
         cava
         killall
         xdg-user-dirs
+        usbutils
     ];
 }
