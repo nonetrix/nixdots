@@ -14,6 +14,10 @@ let
   # Import the global variables file
   global = import ./global-var.nix;
 in {
+  # The version this configuration was made in
+  home-manager.users.user.home.stateVersion = "22.11";
+  system.stateVersion = "22.11"; 
+
   imports =
     [
       # Import home manager https://github.com/nix-community/home-manager
@@ -86,7 +90,4 @@ in {
     dates = "weekly";
     options = "--delete-older-than 30d";
   };
-
-  # The version this configuration was made in
-  system.stateVersion = "22.11"; 
 }

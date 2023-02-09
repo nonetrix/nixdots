@@ -15,8 +15,6 @@ in {
 
   # Configuration for the user specified in the global-var file
   home-manager.users.${global.username} = { pkgs, ...}: {
-    # Version this file was written in
-    home.stateVersion = "22.11";
 
     programs.i3status-rust = {
 
