@@ -15,6 +15,7 @@ in {
             "application/pdf" = ["org.pwmt.zathura.desktop"];
             "text/html" = ["firefox.desktop"];
             "video/" = ["vlc.desktop"];
+            "audio/" = ["vlc.desktop"];
         };
     };
     
