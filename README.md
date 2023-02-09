@@ -25,7 +25,6 @@
 - Generally clean code 
 - Check that comment style is consistent e.g. same wording
 - Add Ranger or Joshuto config
-- Add MPV or VLC, IMV, etc. and make sure they are set as default
 - Add KDE file picker portal since GTK one is trash 
 - Add more keybindings
 - Theme QT
