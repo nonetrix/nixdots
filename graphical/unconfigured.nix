@@ -13,6 +13,6 @@
         freetube
         zathura
         imv
-        vlc
+        mpv
     ];
 }
