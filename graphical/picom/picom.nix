@@ -15,6 +15,8 @@ in {
     services.picom = {
       enable = true;
       vSync = true;
+      shadow = true;
+      fade = true; 
       # Use the OpenGL backend
       backend = "glx";
     };
