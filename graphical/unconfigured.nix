@@ -12,5 +12,7 @@
         anki-bin
         freetube
         zathura
+        imv
+        vlc
     ];
 }
