@@ -11,5 +11,6 @@
         flameshot
         anki-bin
         freetube
+        zathura
     ];
 }
