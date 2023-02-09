@@ -84,6 +84,12 @@ in {
       enable = true;
       # i3 Configuration
       config = {
+      # Fonts
+      fonts = {
+        names = [ "JetBrainsMono Nerd Font" ];
+        size = 11.0;
+      };
+
       # i3 colors
       colors = {
         focused = {
@@ -98,6 +104,10 @@ in {
       # Bar Configuration
       bars = [
         {
+          fonts = {
+            names = [ "JetBrainsMono Nerd Font" ];
+            size = 11.0;
+          };
           position = "top";
           statusCommand = "${pkgs.i3status-rust}/bin/i3status-rs ~/.config/i3status-rust/config-top.toml";
           # Bar colors
@@ -168,7 +178,7 @@ in {
           # Bindings to start various programs
           "${global.mod}+Return" = "exec --no-startup-id alacritty";
           "${global.mod}+b" = "exec firefox";
-          "${global.mod}+r" = "exec --no-startup-id dmenu_run -nb \"#1e1e2e\" -nf \"#cdd6f4\" -sb \"#f5c2e7\" -sf \"#cdd6f4\"";
+          "${global.mod}+r" = "exec --no-startup-id dmenu_run -nb \"#1e1e2e\" -nf \"#cdd6f4\" -sb \"#f5c2e7\" -sf \"#cdd6f4\" -fn \"JetBrainsMono Nerd Font\" -l 30";
           "Print" = "exec flameshot gui";
 
           # Window movement keys
