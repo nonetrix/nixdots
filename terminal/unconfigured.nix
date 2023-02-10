@@ -16,5 +16,8 @@
         killall
         xdg-user-dirs
         usbutils
+        bat
+        lsd
+        ripgrep
     ];
 }

@@ -28,6 +28,15 @@ in {
     # Zsh configuration
     programs.zsh = {
       enable = true;
+
+      # Aliases
+      shellAliases = {
+        "ls" = "lsd ";
+        "cat" = "bat -pp ";
+        "grep" = "rg ";
+        ".." = "cd ..";
+      };
+
       initExtraFirst = ''
         neofetch
         eval $(thefuck --alias)
