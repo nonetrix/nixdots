@@ -19,5 +19,7 @@
         bat
         lsd
         ripgrep
+        polymc
+        steam
     ];
 }
