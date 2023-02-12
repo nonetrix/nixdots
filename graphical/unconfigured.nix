@@ -14,5 +14,6 @@
         zathura
         imv
         mpv
+        yt-dlp
     ];
 }
