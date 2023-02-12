@@ -19,7 +19,7 @@
         bat
         lsd
         ripgrep
-        polymc
+        prismlauncher
         steam
     ];
 }
