@@ -18,5 +18,7 @@
         ffmpeg
         xdotool
         xsel
+        steam
+        prismlauncher
     ];
 }
