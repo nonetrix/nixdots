@@ -240,6 +240,8 @@ in {
             XF86AudioLowerVolume   = "exec --no-startup-id amixer -c 1 set Master 1%-";
             XF86AudioRaiseVolume   = "exec --no-startup-id amixer -c 1 set Master 1%+";
             XF86AudioMute          = "exec --no-startup-id amixer -c 1 set Master 0%";
+
+            "${global.mod}+Insert" = "exec sleep 0.3 && xsel -ob | xdotool type --clearmodifiers --file -";
         };
       };
     };

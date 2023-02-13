@@ -15,5 +15,7 @@
         imv
         mpv
         yt-dlp
+        xdotool
+        xsel
     ];
 }
