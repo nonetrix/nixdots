@@ -15,6 +15,7 @@
         imv
         mpv
         yt-dlp
+        ffmpeg
         xdotool
         xsel
     ];
