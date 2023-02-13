@@ -2,7 +2,7 @@
 
 { config, pkgs, ... }:
 let
-  global = import ../../global-var.nix;
+  global = import ../global-var.nix;
 in {
   imports = [
     <home-manager/nixos>
