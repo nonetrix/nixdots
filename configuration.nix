@@ -42,6 +42,7 @@ in {
       ./services/pipewire.nix
       ./services/xorg.nix
       ./services/polkit.nix
+      ./services/docker.nix
       ./lanuage-support/keyboard/mozc.nix
     ];
 
