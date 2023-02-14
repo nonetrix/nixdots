@@ -14,8 +14,8 @@ in {
         defaultApplications = {
             "application/pdf" = ["org.pwmt.zathura.desktop"];
             "text/html" = ["firefox.desktop"];
-            "video/" = ["vlc.desktop"];
-            "audio/" = ["vlc.desktop"];
+            "video/" = ["mpv.desktop"];
+            "audio/" = ["mpv.desktop"];
         };
     };
     
