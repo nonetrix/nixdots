@@ -21,5 +21,6 @@
         ripgrep
         prismlauncher
         steam
+        distrobox
     ];
 }
