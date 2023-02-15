@@ -164,6 +164,11 @@ in {
           always = true;
           notification = false;
         }
+        {
+          command = "xrandr --output DP-4 --mode 1920x1080 -r 165";
+          always = true;
+          notification = false;
+        }
       ];
 
         keybindings = {

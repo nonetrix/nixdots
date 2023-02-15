@@ -20,5 +20,6 @@
         xsel
         steam
         prismlauncher
+        xorg.xinit
     ];
 }
