@@ -43,6 +43,7 @@ in {
       ./services/xorg.nix
       ./services/polkit.nix
       ./services/docker.nix
+      ./services/flatpak.nix
       ./lanuage-support/keyboard/mozc.nix
     ];
 
