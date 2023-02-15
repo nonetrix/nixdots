@@ -21,5 +21,6 @@
         steam
         prismlauncher
         xorg.xinit
+        krita
     ];
 }
