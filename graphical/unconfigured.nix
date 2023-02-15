@@ -7,7 +7,8 @@
         libsForQt5.dolphin
         qt5ct
         pavucontrol
-        firefox
+        librewolf
+        ungoogled-chromium
         flameshot
         anki-bin
         freetube
