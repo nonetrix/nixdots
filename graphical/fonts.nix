@@ -6,6 +6,6 @@
         noto-fonts-cjk-sans
         noto-fonts-cjk-serif
         (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
-        noto-fonts-emoji-blob-bin
+        noto-fonts-emoji
     ];
 }

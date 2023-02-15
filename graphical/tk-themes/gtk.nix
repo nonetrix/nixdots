@@ -24,8 +24,8 @@ in {
 
     # Cursor themes
     cursorTheme = {
-      name = "Breeze";
-      package = pkgs.libsForQt5.breeze-qt5;
+      name = "Catppuccin-Mocha-Pink-Cursors";
+      package = pkgs.catppuccin-cursors.mochaPink;
     };
 
       # Theme configuration
