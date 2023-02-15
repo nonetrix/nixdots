@@ -10,15 +10,16 @@
   boot.kernelModules = [ "kvm-amd" ];
   services.xserver.videoDrivers = [ "nvidia" ];
   hardware.opengl.enable = true;
+  hardware.opengl.driSupport32Bit = true;
   boot.extraModulePackages = [ ];
 
   fileSystems."/" =
-    { device = "/dev/disk/by-uuid/a5c08c10-cef8-411b-83a2-18d3e9febcd2";
+    { device = "/dev/nvme0n1p2";
       fsType = "ext4";
     };
 
   fileSystems."/boot/efi" =
-    { device = "/dev/disk/by-uuid/2E28-5CFD";
+    { device = "/dev/nvme0n1p1";
       fsType = "vfat";
     };
 
