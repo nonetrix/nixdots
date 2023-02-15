@@ -12,15 +12,10 @@
          |_____|                                                 
 ```
 
-# WARNING
-## This is extrememly WIP and mostly intended for myself and my hardware e.g. having a NVIDIA GPU, this may change however.
-
 ## TODO:
 - Look into if statements for things like enabling NVIDIA GPU monitor on the status bar, propritery software etc.
 - Move to flakes
 - Write config for server and phone via termux fork
-- Add install instructions
-- Actually test it
 - Organize code
 - Generally clean code 
 - Check that comment style is consistent e.g. same wording
@@ -34,3 +29,18 @@
 - Get a life
 - Get goth doomer NixOS user trad gf
 - Take over the world
+
+## Installation
+
+# Please note that unless you have a NVIDIA GPU, 165Hz monitor, same username and the same disk UUID as well you might need to do some hacking
+
+1. Install NixOS with GUI installer and no desktop
+2. Boot into installed OS
+3. Connect to WiFi if needed with nmtui
+4. Run nix-shell -p git
+5. Run git clone https://github.com/nonetrix/nixdots
+6. Run sudo nix-channel --add https://github.com/nix-community/home-manager/archive/release-22.11.tar.gz home-manager
+7. Run sudo nix-channel --update
+8. Run sudo cp -r ./nixdots/* /etc/nixos
+9. Run sudo nixos-rebuild switch
+10. Reboot and hope for best
