@@ -13,7 +13,7 @@ in {
         enable = true;
         defaultApplications = {
             "application/pdf" = ["org.pwmt.zathura.desktop"];
-            "text/html" = ["firefox.desktop"];
+            "text/html" = ["librewolf.desktop"];
             "video/" = ["mpv.desktop"];
             "audio/" = ["mpv.desktop"];
         };
