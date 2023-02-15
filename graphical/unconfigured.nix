@@ -4,8 +4,8 @@
 
     environment.systemPackages = with pkgs; [
         vscodium
-        libsForQt5.dolphin
-        qt5ct
+        pcmanfm
+        #qt5ct
         pavucontrol
         librewolf
         ungoogled-chromium
