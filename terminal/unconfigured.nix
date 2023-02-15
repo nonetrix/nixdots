@@ -20,5 +20,6 @@
         prismlauncher
         steam
         distrobox
+        vulkan-tools
     ];
 }
