@@ -3,9 +3,10 @@
     environment.systemPackages = with pkgs; [
         vscodium
         pcmanfm
-        #qt5ct
+        zip
+        unzip
         pavucontrol
-        librewolf
+        firefox
         ungoogled-chromium
         flameshot
         anki-bin

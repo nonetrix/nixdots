@@ -21,8 +21,11 @@ in {
       displayManager.lightdm.greeters.gtk = {
         enable = true;
         theme = {
-          name = "Catppuccin-Pink-Dark";
-          package = pkgs.catppuccin-gtk;
+          name = "Catppuccin-Mocha-Standard-Pink-Dark";
+          package = pkgs.catppuccin-gtk.override {
+            accents = ["pink"];
+            variant = "mocha";
+          };
         };
       };
       enable = true;
@@ -34,6 +37,6 @@ in {
     };
   };
   home-manager.users.${global.username} = { pkgs, ...}: {
-    home.file.".icons/default".source = "${pkgs.catppuccin-cursors.mochaPink}/share/icons/Catppuccin-Mocha-Pink-Cursors";
+    home.file.".icons/default".source = "${pkgs.catppuccin-cursors.mochaDark}/share/icons/Catppuccin-Mocha-Dark-Cursors";
   };
 }

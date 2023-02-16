@@ -182,7 +182,7 @@ in {
 
           # Bindings to start various programs
           "${global.mod}+Return" = "exec --no-startup-id alacritty";
-          "${global.mod}+b" = "exec librewolf";
+          "${global.mod}+b" = "exec firefox";
           "${global.mod}+r" = "exec --no-startup-id dmenu_run -nb \"#1e1e2e\" -nf \"#cdd6f4\" -sb \"#f5c2e7\" -sf \"#cdd6f4\" -fn \"JetBrainsMono Nerd Font\" -l 30";
           "Print" = "exec flameshot gui";
 

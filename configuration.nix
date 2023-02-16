@@ -15,8 +15,8 @@ let
   global = import ./global-var.nix;
 in {
   # The version this configuration was made in
-  home-manager.users.user.home.stateVersion = "22.11";
-  system.stateVersion = "22.11"; 
+  home-manager.users.user.home.stateVersion = "23.05";
+  system.stateVersion = "23.05"; 
 
   imports =
     [

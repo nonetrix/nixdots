@@ -24,14 +24,17 @@ in {
 
     # Cursor themes
     cursorTheme = {
-      name = "Catppuccin-Mocha-Pink-Cursors";
-      package = pkgs.catppuccin-cursors.mochaPink;
+      name = "Catppuccin-Mocha-Dark-Cursors";
+      package = pkgs.catppuccin-cursors.mochaDark;
     };
 
       # Theme configuration
       theme = {
-        name = "Catppuccin-Pink-Dark";
-        package = pkgs.catppuccin-gtk;
+        name = "Catppuccin-Mocha-Standard-Pink-Dark";
+        package = pkgs.catppuccin-gtk.override {
+          accents = ["pink"];
+          variant = "mocha";
+        };
       };
     };
   };
