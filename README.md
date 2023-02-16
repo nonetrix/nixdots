@@ -28,7 +28,7 @@
 
 ## Installation
 
-# Please note that unless you have a NVIDIA GPU, 165Hz monitor, same username and the same disk UUID as well you might need to do some hacking
+# Please note that unless you have a NVIDIA GPU, 165Hz monitor, same username and the same disk name as well you might need to do some hacking
 
 1. Install NixOS unstable with GUI installer and no desktop
 2. Boot into installed OS
