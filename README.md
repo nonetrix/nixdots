@@ -36,8 +36,7 @@
 4. Run nix-shell -p git
 5. Run git clone https://github.com/nonetrix/nixdots
 6. Run sudo nix-channel --add https://github.com/nix-community/home-manager/archive/master.tar.gz home-manager
-7. Add nur to nixpkgs at ~/.config/nixpkgs/config.nix https://github.com/nix-community/NUR
-8. Run sudo nix-channel --update
-9. Run sudo cp -r ./nixdots/* /etc/nixos
-10. Run sudo nixos-rebuild switch
-11. Reboot and hope for best
+7. Run sudo nix-channel --update
+8. Run sudo cp -r ./nixdots/* /etc/nixos
+9. Run sudo nixos-rebuild switch
+10. Reboot and hope for best
