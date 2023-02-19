@@ -21,5 +21,6 @@
         steam
         distrobox
         vulkan-tools
+        realesrgan-ncnn-vulkan
     ];
 }

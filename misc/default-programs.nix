@@ -26,6 +26,8 @@ in {
             "audio/wav" = ["mpv.desktop"];
             "audio/m4a" = ["mpv.desktop"];
             "image/png" = ["imv.desktop"];
+            "image/jpg" = ["imv.desktop"];
+            "image/jpeg" = ["imv.desktop"];
             "image/webp" = ["imv.desktop"];
             "image/avif" = ["imv.desktop"];
             "image/svg" = ["imv.desktop"];

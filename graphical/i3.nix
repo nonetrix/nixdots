@@ -10,6 +10,7 @@ in {
 
   environment.systemPackages = with pkgs; [
     dmenu
+    networkmanagerapplet
   ];
 
 
@@ -145,7 +146,7 @@ in {
           notification = false;
         }
         {
-          command = "xwallpaper --zoom ~/Pictures/Wallpapers/$(ls ~/Pictures/Wallpapers | shuf -n 1)";
+          command = "xwallpaper --zoom ~/Pictures/wallpapers/$(ls ~/Pictures/wallpapers | shuf -n 1)";
           always = true;
           notification = false;
         }
@@ -166,6 +167,11 @@ in {
         }
         {
           command = "xrandr --output DP-4 --mode 1920x1080 -r 165";
+          always = true;
+          notification = false;
+        }
+        {
+          command = "nm-applet";
           always = true;
           notification = false;
         }
@@ -197,8 +203,8 @@ in {
           "${global.mod}+Shift+k" = "move up";
           "${global.mod}+Shift+l" = "move right";
 
-          "${global.mod}+z" = "split h";
-          "${global.mod}+x" = "split v";
+          "${global.mod}+x" = "split h";
+          "${global.mod}+z" = "split v";
 
           "${global.mod}+t" = "layout tabbed";
           "${global.mod}+s" = "layout stacking";

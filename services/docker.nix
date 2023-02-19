@@ -4,10 +4,10 @@ let
 in {
   virtualisation.docker = {
     enable = true;
-    rootless = {
-      enable = true;
-      setSocketVariable = true;
-    };
   };
   users.users.${global.username}.extraGroups = [ "docker" ];
+
+  environment.systemPackages = with pkgs; [
+    nvidia-docker
+  ];
 }

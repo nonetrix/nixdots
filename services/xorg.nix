@@ -11,8 +11,9 @@ in {
 
   environment.systemPackages = with pkgs; [
     xorg.xkill
+    xorg.xhost
     xwallpaper
-    unclutter
+    unclutter-xfixes
   ];
 
   services = {

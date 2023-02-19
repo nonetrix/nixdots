@@ -21,7 +21,7 @@ in {
   imports =
     [
       # Import home manager https://github.com/nix-community/home-manager
-      <home-manager/nixos>
+      <home-manager/nixos>  
       ./hardware-configuration.nix
       ./terminal/zsh.nix
       ./terminal/nvim.nix
@@ -33,9 +33,11 @@ in {
       ./graphical/i3.nix
       ./graphical/picom.nix
       ./graphical/fonts.nix
+      ./graphical/codium.nix
       ./graphical/virt-manager.nix
       ./graphical/openrgb.nix
       ./graphical/unconfigured.nix
+      ./graphical/firefox.nix
       ./misc/hosts.nix
       ./misc/udev.nix
       ./misc/default-programs.nix

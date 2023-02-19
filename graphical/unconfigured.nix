@@ -1,12 +1,10 @@
 { config, pkgs, ... }:
 {
     environment.systemPackages = with pkgs; [
-        vscodium
         pcmanfm
         zip
         unzip
         pavucontrol
-        firefox
         ungoogled-chromium
         flameshot
         anki-bin
