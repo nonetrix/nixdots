@@ -40,6 +40,7 @@ in {
       ./graphical/firefox.nix
       ./misc/hosts.nix
       ./misc/udev.nix
+      ./misc/ntp.nix
       ./misc/default-programs.nix
       ./services/pipewire.nix
       ./services/xorg.nix
