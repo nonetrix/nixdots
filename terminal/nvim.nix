@@ -18,6 +18,10 @@ in {
             set autoindent
             set tabstop=4
             set ignorecase
+            
+            lua << EOF
+            require("catppuccin").setup()
+            EOF
         '';
         plugins = [
             pkgs.vimPlugins.catppuccin-nvim
