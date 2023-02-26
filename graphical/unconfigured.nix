@@ -20,5 +20,8 @@
         prismlauncher
         xorg.xinit
         krita
+        devour
+        spotify
+        discord
     ];
 }

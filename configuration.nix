@@ -38,6 +38,7 @@ in {
       ./graphical/openrgb.nix
       ./graphical/unconfigured.nix
       ./graphical/firefox.nix
+      ./graphical/emacs.nix
       ./misc/hosts.nix
       ./misc/udev.nix
       ./misc/ntp.nix

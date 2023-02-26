@@ -23,7 +23,6 @@
 - Add sway config and make sure it has needed kernel options to work on NVIDIA(poorly)
 - Get a AMD GPU
 - Get a life
-- Get goth doomer NixOS user trad gf
 - Take over the world
 
 ## Installation

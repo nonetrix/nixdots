@@ -175,6 +175,11 @@ in {
           always = true;
           notification = false;
         }
+        {
+          command = "openrgb --profile cat";
+          always = true;
+          notification = false;
+        }
       ];
 
         keybindings = {
