@@ -66,19 +66,7 @@ in {
           styles = {
               comments = { "italic" },
               conditionals = { "italic" },
-              loops = {},
-              functions = {},
-              keywords = {},
-              strings = {},
-              variables = {},
-              numbers = {},
-              booleans = {},
-              properties = {},
-              types = {},
-              operators = {},
           },
-          color_overrides = {},
-          custom_highlights = {},
           integrations = {
               cmp = true,
               gitsigns = true,
@@ -92,8 +80,8 @@ in {
           },
       })
 
-      -- setup must be called before loading
-      vim.cmd.colorscheme "catppuccin"
+        -- setup must be called before loading
+        vim.cmd.colorscheme "catppuccin"
         '';
 
         
