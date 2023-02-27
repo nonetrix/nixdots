@@ -23,6 +23,12 @@
       fsType = "vfat";
     };
 
+  fileSystems."/mnt/hdd" =
+    { device = "/dev/sda1";
+      fsType = "ext4";
+    };
+
+
   swapDevices = [ ];
 
   networking.useDHCP = lib.mkDefault true;
