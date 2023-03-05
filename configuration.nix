@@ -49,6 +49,7 @@ in {
       ./services/docker.nix
       ./services/xdg-portal.nix
       ./services/flatpak.nix
+      ./services/usb-automount.nix
       ./lanuage-support/keyboard/mozc.nix
       ./programming-lang/rust.nix
       ./programming-lang/python.nix

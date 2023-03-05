@@ -180,6 +180,11 @@ in {
           always = true;
           notification = false;
         }
+        {
+          command = "xhost +local:";
+          always = true;
+          notification = false;
+        }
       ];
 
         keybindings = {

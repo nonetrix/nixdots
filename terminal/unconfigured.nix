@@ -23,5 +23,7 @@
         distrobox
         vulkan-tools
         realesrgan-ncnn-vulkan
+        ani-cli
+        udisks
     ];
 }

@@ -31,7 +31,8 @@ in {
             "image/webp" = ["imv.desktop"];
             "image/avif" = ["imv.desktop"];
             "image/svg" = ["imv.desktop"];
-            "inode/directory" = ["pcmanfm.desktop"];
+            "image/gif" = ["imv.desktop"];
+            "inode/directory" = ["nemo.desktop"];
         };
     };
   };

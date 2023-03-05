@@ -4,6 +4,7 @@ let
 in {
   virtualisation.docker = {
     enable = true;
+    enableNvidia = true;
   };
   users.users.${global.username}.extraGroups = [ "docker" ];
 

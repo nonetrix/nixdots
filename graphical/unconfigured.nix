@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
 {
     environment.systemPackages = with pkgs; [
-        pcmanfm
+        cinnamon.nemo
         zip
         unzip
         pavucontrol
@@ -23,5 +23,7 @@
         devour
         spotify
         discord
+        kdenlive
+        blender
     ];
 }
