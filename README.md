@@ -15,15 +15,12 @@
 ## TODO:
 - Look into if statements for things like enabling NVIDIA GPU monitor on the status bar, propritery software etc.
 - Move to flakes
-- Write config for server and phone via termux fork
+- Write config for server and phone via termux fork and flakes
 - Organize code
 - Generally clean code 
 - Check that comment style is consistent e.g. same wording
 - Add Ranger or Joshuto config
 - Add sway config and make sure it has needed kernel options to work on NVIDIA(poorly)
-- Get a AMD GPU
-- Get a life
-- Take over the world
 
 ## Installation
 
