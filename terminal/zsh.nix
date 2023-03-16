@@ -29,6 +29,8 @@ in {
     programs.zsh = {
       enable = true;
 
+      history.ignoreDups = true;
+
       # Aliases
       shellAliases = {
         "ls" = "lsd ";
@@ -39,7 +41,9 @@ in {
 
       initExtraFirst = ''
         neofetch
+        export PATH="$HOME/.local/bin:$PATH"
         eval $(thefuck --alias)
+
       ''; 
       enableSyntaxHighlighting = true;
       enableAutosuggestions = true;

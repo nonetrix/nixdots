@@ -8,4 +8,6 @@
         (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
         noto-fonts-emoji
     ];
+
+    fonts.fontDir.enable = true;
 }

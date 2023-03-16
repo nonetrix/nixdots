@@ -22,8 +22,8 @@
         krita
         devour
         spotify
-        discord
         kdenlive
         blender
+        libreoffice
     ];
 }
