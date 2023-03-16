@@ -1,3 +1,10 @@
+# This project is discontunied 
+Unfortunately, due to various bugs and issues I have decided to switch away from NixOS. I want to love NixOS, and I really do to be honest but these issuess are deal breaker for me.
+- Non-english fonts being broken in Flatpaks sometimes
+- All Chromium browsers and Chromium aplications stuck at 60Hz
+
+I might come back to NixOS as I really like it, but I am going to wait on these issues to either be fixed or me to find out why they are happening to me only
+
 # nixdots
 ```
  ________         __                                 __         
