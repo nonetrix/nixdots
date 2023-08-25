@@ -60,13 +60,6 @@ in {
             format_mem = "{mem_used_percents}";
           }
           {
-            label = "GTX 1080";
-            block = "nvidia_gpu";
-            show_utilization = true;
-            show_temperature = true;
-            show_memory = true;
-          }
-          {
             block = "cpu";
             interval = 1;
           }
