@@ -20,7 +20,6 @@
 - Generally clean code 
 - Check that comment style is consistent e.g. same wording
 - Add Ranger or Joshuto config
-- Add sway config and make sure it has needed kernel options to work on NVIDIA(poorly)
 
 ## Installation
 
