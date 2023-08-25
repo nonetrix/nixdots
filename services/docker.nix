@@ -7,8 +7,4 @@ in {
     enableNvidia = true;
   };
   users.users.${global.username}.extraGroups = [ "docker" ];
-
-  environment.systemPackages = with pkgs; [
-    nvidia-docker
-  ];
 }
