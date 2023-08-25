@@ -6,7 +6,6 @@
         wget
         git
         bottom
-        nvtop
         neofetch
         alsa-utils
         playerctl
