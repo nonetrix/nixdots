@@ -8,10 +8,16 @@
   boot.initrd.availableKernelModules = [ "xhci_pci" "ahci" "nvme" "usbhid" "sd_mod" ];
   boot.initrd.kernelModules = [ ];
   boot.kernelModules = [ "kvm-amd" ];
-  services.xserver.videoDrivers = [ "nvidia" ];
-  hardware.opengl.enable = true;
+  boot.initrd.kernelModules = [ "amdgpu" ];
+  services.xserver.videoDrivers = [ "amdgpu" ];
+  hardware.opengl.driSupport = true;
   hardware.opengl.driSupport32Bit = true;
   boot.extraModulePackages = [ ];
+
+  hardware.opengl.extraPackages = with pkgs; [
+    rocm-opencl-icd
+    rocm-opencl-runtime
+  ];
 
   fileSystems."/" =
     { device = "/dev/nvme0n1p2";
