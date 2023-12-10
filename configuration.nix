@@ -15,13 +15,11 @@ let
   global = import ./global-var.nix;
 in {
   # The version this configuration was made in
-  home-manager.users.user.home.stateVersion = "23.05";
-  system.stateVersion = "23.05"; 
+  home-manager.users.noah.home.stateVersion = "23.05";
+  system.stateVersion = "24.05"; 
 
   imports =
     [
-      # Import home manager https://github.com/nix-community/home-manager
-      <home-manager/nixos>  
       ./hardware-configuration.nix
       ./terminal/zsh.nix
       ./terminal/nvim.nix
@@ -30,16 +28,17 @@ in {
       ./graphical/tk-themes/gtk.nix
       ./graphical/tk-themes/qt.nix
       ./graphical/tk-themes/themes.nix
-      ./graphical/i3.nix
-      ./graphical/picom.nix
+      ./graphical/hyprland.nix
+      ./graphical/wofi.nix
       ./graphical/fonts.nix
       ./graphical/codium.nix
       ./graphical/virt-manager.nix
       ./graphical/openrgb.nix
       ./graphical/unconfigured.nix
       ./graphical/firefox.nix
-      ./graphical/emacs.nix
-      ./misc/hosts.nix
+      ./graphical/mako.nix
+      ./amd-gpu.nix
+      #./misc/hosts.nix
       ./misc/udev.nix
       ./misc/ntp.nix
       ./misc/default-programs.nix
@@ -50,16 +49,18 @@ in {
       ./services/xdg-portal.nix
       ./services/flatpak.nix
       ./services/usb-automount.nix
+      ./services/waydroid.nix
       ./lanuage-support/keyboard/mozc.nix
       ./programming-lang/rust.nix
       ./programming-lang/python.nix
-
     ];
+
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   # Enable boot loader and set boot mount point
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
-  boot.loader.efi.efiSysMountPoint = "/boot/efi";
+  # boot.loader.efi.efiSysMountPoint = "/boot/EFI";
 
   # Networking
   networking.hostName = "nixos";

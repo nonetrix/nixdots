@@ -3,11 +3,6 @@ let
   # Import the global variables file
   global = import ../global-var.nix;
 in {
-  imports = [
-    # Import home manager https://github.com/nix-community/home-manager
-    <home-manager/nixos>
-  ];
-
   # Configuration for the user specified in the global-var file
   home-manager.users.${global.username} = { pkgs, ...}: {
     
@@ -15,6 +10,10 @@ in {
     programs.alacritty = {
       enable = true;
       settings = {
+        window = {
+          opacity = 0.9;
+        };
+
         font = {
           normal = {
             family = "JetBrainsMono Nerd Font";

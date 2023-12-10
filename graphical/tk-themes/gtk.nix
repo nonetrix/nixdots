@@ -4,11 +4,6 @@ let
   global = import ../../global-var.nix;
 
 in {
-  imports = [
-    # Import home manager https://github.com/nix-community/home-manager
-    <home-manager/nixos>
-  ];
-
   # Configuration for the user specified in the global-var file
   home-manager.users.${global.username} = { pkgs, ...}: {
     
@@ -30,9 +25,9 @@ in {
 
       # Theme configuration
       theme = {
-        name = "Catppuccin-Mocha-Standard-Pink-Dark";
+        name = "Catppuccin-Mocha-Standard-Green-Dark";
         package = pkgs.catppuccin-gtk.override {
-          accents = ["pink"];
+          accents = ["green"];
           variant = "mocha";
         };
       };

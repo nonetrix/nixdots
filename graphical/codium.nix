@@ -3,7 +3,7 @@ let
   global = import ../global-var.nix;
 in {
   imports = [
-    <home-manager/nixos>
+    #<home-manager/nixos>
   ];
 
   home-manager.users.${global.username} = { pkgs, ...}: {

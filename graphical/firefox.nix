@@ -4,15 +4,6 @@ let
   global = import ../global-var.nix;
   nur-no-pkgs = import (builtins.fetchTarball "https://github.com/nix-community/NUR/archive/master.tar.gz") {};
 in {
-  imports = [
-    # Import home manager https://github.com/nix-community/home-manager
-    <home-manager/nixos>
-  ];
-
-
-
-  
-  
   # Configuration for the user specified in the global-var file
   home-manager.users.${global.username} = { pkgs, libs, ...}: {
     

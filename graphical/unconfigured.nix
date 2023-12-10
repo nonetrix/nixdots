@@ -2,28 +2,27 @@
 {
     environment.systemPackages = with pkgs; [
         cinnamon.nemo
-        zip
-        unzip
         pavucontrol
         ungoogled-chromium
-        flameshot
         anki-bin
         freetube
         zathura
         imv
         mpv
+        libsForQt5.ark
         yt-dlp
         ffmpeg
-        xdotool
-        xsel
         steam
         prismlauncher
-        xorg.xinit
+        swww
+        wofi
+        obs-studio
         krita
-        devour
         spotify
         kdenlive
         blender
         libreoffice
+        livecaptions
+        gamescope
     ];
 }

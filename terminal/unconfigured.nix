@@ -1,12 +1,15 @@
 { config, pkgs, ... }:
 {
     environment.systemPackages = with pkgs; [
+        zip
+        unzip
         fzf
         tree
+        btop
+        nvtop-amd
+        gamemode
         wget
         git
-        bottom
-        neofetch
         alsa-utils
         playerctl
         dconf
@@ -14,15 +17,17 @@
         killall
         xdg-user-dirs
         usbutils
+        fastfetch
+        unimatrix
         bat
         lsd
         ripgrep
         prismlauncher
-        steam
         distrobox
         vulkan-tools
         realesrgan-ncnn-vulkan
         ani-cli
         udisks
+        trashy
     ];
 }
