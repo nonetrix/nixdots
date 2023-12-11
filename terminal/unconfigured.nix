@@ -29,5 +29,6 @@
         ani-cli
         udisks
         trashy
+        alejandra
     ];
 }
