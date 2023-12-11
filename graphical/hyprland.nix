@@ -1,19 +1,23 @@
 # home.nix
-{config, pkgs, inputs, ...}:
-let
+{
+  config,
+  pkgs,
+  inputs,
+  ...
+}: let
   # Import the global variables file
   global = import ../global-var.nix;
 in {
-  home-manager.users.${global.username} = { pkgs, ...}: {
+  home-manager.users.${global.username} = {pkgs, ...}: {
     wayland.windowManager.hyprland = {
-        package = inputs.hyprland.packages.${pkgs.system}.hyprland;
-        enable = true;
+      package = inputs.hyprland.packages.${pkgs.system}.hyprland;
+      enable = true;
 
-        plugins = [
-          inputs.split-monitor-workspaces.packages.${pkgs.system}.split-monitor-workspaces
-        ];
+      plugins = [
+        inputs.split-monitor-workspaces.packages.${pkgs.system}.split-monitor-workspaces
+      ];
 
-        extraConfig = ''
+      extraConfig = ''
         $mod = SUPER
 
         # workspaces
@@ -72,7 +76,7 @@ in {
             enabled = true
             size = 5
             passes = 3
-        
+
             vibrancy = 0.1696
           }
         }

@@ -9,17 +9,21 @@
 
     hyprland.url = "github:hyprwm/Hyprland";
 
-    #This should be default change my mind  
+    #This should be default change my mind
     split-monitor-workspaces = {
       url = "github:Duckonaut/split-monitor-workspaces";
       inputs.hyprland.follows = "hyprland"; # <- make sure this line is present for the plugin to work as intended
     };
   };
 
-  outputs = {self, nixpkgs, home-manager, ...}@inputs:
-  let
+  outputs = {
+    self,
+    nixpkgs,
+    home-manager,
+    ...
+  } @ inputs: let
     system = "x86_64-linux";
-    
+
     pkgs = import nixpkgs {
       inherit system;
 
@@ -27,11 +31,10 @@
         allowUnfree = true;
       };
     };
-
   in {
     nixosConfigurations = {
       nixos = nixpkgs.lib.nixosSystem {
-        specialArgs = { inherit inputs; };
+        specialArgs = {inherit inputs;};
         system = "x86_64-linux";
         modules = [
           ./configuration.nix

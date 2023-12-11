@@ -1,21 +1,23 @@
 # TODO: This file is incomplete
-
-{ config, pkgs, libs, ... }:
-let 
+{
+  config,
+  pkgs,
+  libs,
+  ...
+}: let
   # Import the global variables file
   global = import ../../global-var.nix;
-
 in {
-  environment.systemPackages = with pkgs; [ 
+  environment.systemPackages = with pkgs; [
     libsForQt5.qtstyleplugin-kvantum
-    qt5ct 
+    qt5ct
   ];
 
   environment.variables = {
     QT_QPA_PLATFORMTHEME = "qt5ct";
   };
 
-  home-manager.users.${global.username} = { pkgs, ...}: {
+  home-manager.users.${global.username} = {pkgs, ...}: {
     home.file = {
       ".config/Kvantum/".source = ./catppuccin-qt;
 

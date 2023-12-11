@@ -1,12 +1,13 @@
-{ config, pkgs, ... }:
-let 
+{
+  config,
+  pkgs,
+  ...
+}: let
   # Import the global variables file
   global = import ../../global-var.nix;
-
 in {
   # Configuration for the user specified in the global-var file
-  home-manager.users.${global.username} = { pkgs, ...}: {
-    
+  home-manager.users.${global.username} = {pkgs, ...}: {
     # GTK configuration
     gtk = {
       enable = true;
@@ -17,11 +18,11 @@ in {
         package = pkgs.papirus-icon-theme;
       };
 
-    # Cursor themes
-    cursorTheme = {
-      name = "Catppuccin-Mocha-Dark-Cursors";
-      package = pkgs.catppuccin-cursors.mochaDark;
-    };
+      # Cursor themes
+      cursorTheme = {
+        name = "Catppuccin-Mocha-Dark-Cursors";
+        package = pkgs.catppuccin-cursors.mochaDark;
+      };
 
       # Theme configuration
       theme = {

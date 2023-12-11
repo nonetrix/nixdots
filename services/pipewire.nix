@@ -1,5 +1,8 @@
-{ config, pkgs, ... }:
 {
+  config,
+  pkgs,
+  ...
+}: {
   services.pipewire = {
     enable = true;
     # Enable Pipewire audio support

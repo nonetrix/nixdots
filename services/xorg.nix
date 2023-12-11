@@ -1,8 +1,10 @@
-{ config, pkgs, ... }:
-let 
+{
+  config,
+  pkgs,
+  ...
+}: let
   # Import the global variables file
   global = import ../global-var.nix;
-
 in {
   services.greetd = {
     enable = true;
@@ -21,7 +23,7 @@ in {
     };
   };
 
-  home-manager.users.${global.username} = { pkgs, ...}: {
+  home-manager.users.${global.username} = {pkgs, ...}: {
     home.file.".icons/default".source = "${pkgs.catppuccin-cursors.mochaDark}/share/icons/Catppuccin-Mocha-Dark-Cursors";
   };
 }

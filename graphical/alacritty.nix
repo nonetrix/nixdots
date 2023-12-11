@@ -1,11 +1,13 @@
-{ config, pkgs, ... }:
-let
+{
+  config,
+  pkgs,
+  ...
+}: let
   # Import the global variables file
   global = import ../global-var.nix;
 in {
   # Configuration for the user specified in the global-var file
-  home-manager.users.${global.username} = { pkgs, ...}: {
-    
+  home-manager.users.${global.username} = {pkgs, ...}: {
     # Alacritty configuration
     programs.alacritty = {
       enable = true;
@@ -39,10 +41,10 @@ in {
         # Catppuccin color scheme
         colors = {
           primary = {
-             background = "#1E1E2E";
-             foreground = "#CDD6F4";
-             dim_foreground = "#CDD6F4";
-             bright_foreground = "#CDD6F4";
+            background = "#1E1E2E";
+            foreground = "#CDD6F4";
+            dim_foreground = "#CDD6F4";
+            bright_foreground = "#CDD6F4";
           };
 
           cursor = {

@@ -1,17 +1,19 @@
-{ config, pkgs, ... }:
-let
+{
+  config,
+  pkgs,
+  ...
+}: let
   # Import the global variables file
   global = import ../global-var.nix;
 in {
-  programs.zsh.enable = true;  
+  programs.zsh.enable = true;
 
   environment.systemPackages = with pkgs; [
     thefuck
   ];
 
   # Configuration for the user specified in the global-var file
-  home-manager.users.${global.username} = { pkgs, ...}: {
-
+  home-manager.users.${global.username} = {pkgs, ...}: {
     # Starship configuration
     programs.starship = {
       enable = true;
@@ -57,10 +59,10 @@ in {
       zplug = {
         enable = true;
         plugins = [
-          { name = "catppuccin/zsh-syntax-highlighting"; }
-          { name = "jeffreytse/zsh-vi-mode"; }
-          { name = "chisui/zsh-nix-shell"; }
-          { name = "nix-community/nix-zsh-completions"; }
+          {name = "catppuccin/zsh-syntax-highlighting";}
+          {name = "jeffreytse/zsh-vi-mode";}
+          {name = "chisui/zsh-nix-shell";}
+          {name = "nix-community/nix-zsh-completions";}
         ];
       };
     };

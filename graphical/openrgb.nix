@@ -1,6 +1,9 @@
-{ config, pkgs, ... }:
 {
-    environment.systemPackages = with pkgs; [
-        openrgb
-    ];
+  config,
+  pkgs,
+  ...
+}: {
+  environment.systemPackages = with pkgs; [
+    openrgb
+  ];
 }
