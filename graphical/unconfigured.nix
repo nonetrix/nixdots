@@ -15,7 +15,6 @@
     libsForQt5.ark
     yt-dlp
     ffmpeg
-    steam
     prismlauncher
     swww
     wofi
@@ -27,5 +26,6 @@
     libreoffice
     livecaptions
     gamescope
+    hyprshot
   ];
 }

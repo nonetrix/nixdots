@@ -38,6 +38,7 @@ in {
     ./graphical/unconfigured.nix
     ./graphical/firefox.nix
     ./graphical/mako.nix
+    ./graphical/steam.nix
     ./amd-gpu.nix
     #./misc/hosts.nix
     ./misc/udev.nix

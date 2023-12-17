@@ -87,12 +87,8 @@ in {
           col.active_border = rgba(a6e3a1ff)
 
           cursor_inactive_timeout = 4
-          allow_tearing = true
         }
 
-        env = WLR_DRM_NO_ATOMIC,1
-
-        windowrulev2 = immediate,fullscreen:1
 
         input {
           follow_mouse = 1

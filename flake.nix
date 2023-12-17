@@ -14,12 +14,15 @@
       url = "github:Duckonaut/split-monitor-workspaces";
       inputs.hyprland.follows = "hyprland"; # <- make sure this line is present for the plugin to work as intended
     };
+
+    nur.url = "github:nix-community/NUR";
   };
 
   outputs = {
     self,
     nixpkgs,
     home-manager,
+    nur,
     ...
   } @ inputs: let
     system = "x86_64-linux";

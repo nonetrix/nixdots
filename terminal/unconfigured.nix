@@ -33,5 +33,7 @@
     udisks
     trashy
     alejandra
+    wl-clipboard
+    bc
   ];
 }
