@@ -18,17 +18,17 @@ in {
     #imports = lib.attrValues nur-no-pkgs.repos.moredhel.hmModules.rawModules;
     programs.firefox = {
       enable = true;
-       #profiles.default.extensions =
-       #with pkgs.nur.repos.rycee.firefox-addons; [
-         #ublock-origin
-         #"10ten-ja-reader"
-         #fastforward
-         #return-youtube-dislikes
-         #search-by-image
-         #sponsorblock
-         #stylus
-         #violentmonkey
-       #];
+      #profiles.default.extensions =
+      #with pkgs.nur.repos.rycee.firefox-addons; [
+      #ublock-origin
+      #"10ten-ja-reader"
+      #fastforward
+      #return-youtube-dislikes
+      #search-by-image
+      #sponsorblock
+      #stylus
+      #violentmonkey
+      #];
     };
   };
 }
