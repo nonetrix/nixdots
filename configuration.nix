@@ -25,6 +25,7 @@ in {
     ./terminal/zsh.nix
     ./terminal/nvim.nix
     ./terminal/unconfigured.nix
+    ./terminal/newsboat.nix
     ./graphical/alacritty.nix
     ./graphical/tk-themes/gtk.nix
     ./graphical/tk-themes/qt.nix
@@ -36,7 +37,6 @@ in {
     ./graphical/virt-manager.nix
     ./graphical/openrgb.nix
     ./graphical/unconfigured.nix
-    ./graphical/firefox.nix
     ./graphical/mako.nix
     ./graphical/steam.nix
     ./amd-gpu.nix

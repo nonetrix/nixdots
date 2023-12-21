@@ -27,5 +27,10 @@
     livecaptions
     gamescope
     hyprshot
+    mangohud
+    # Firefox, America: :/
+    # Firefox, Japan: HOLY SHIT :OOOOO
+    floorp
+    heroic
   ];
 }

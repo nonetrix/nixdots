@@ -55,7 +55,7 @@ in {
         binde = $mod CTRL, k, resizeactive, 0 -10
         binde = $mod CTRL, j, resizeactive, 0 10
 
-        bind = $mod, B, exec, firefox
+        bind = $mod, B, exec, floorp
         bind = $mod, Return, exec, alacritty
 
         bind = $mod, Space, exec, wofi --show drun
