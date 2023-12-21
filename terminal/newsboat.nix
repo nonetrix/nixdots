@@ -10,10 +10,16 @@ in {
   home-manager.users.${global.username} = {pkgs, ...}: {
     programs.newsboat = {
       enable = true;
-      programs.newsboat.urls = [
-        "https://www.allsides.com/news/rss"
-        "https://lukesmith.xyz/index.xml"
-        "https://www.phoronix.com/rss.php"
+      urls = [
+        {
+          url = "https://www.allsides.com/news/rss";
+        }
+        {
+          url = "https://lukesmith.xyz/index.xml";
+        }
+        {
+          url = "https://www.phoronix.com/rss.php";
+        }
       ];
     };
   };
