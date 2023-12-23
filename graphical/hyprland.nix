@@ -89,6 +89,10 @@ in {
           cursor_inactive_timeout = 4
         }
 
+        misc {
+          enable_swallow = true
+          swallow_regex = ^(Alacritty)$
+        } 
 
         input {
           follow_mouse = 1
@@ -102,7 +106,6 @@ in {
         monitor=DP-3, 1920x1200, 1920x0, 1
 
         exec-once = swww init
-        #exec-once = mako
       '';
     };
   };
