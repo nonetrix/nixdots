@@ -11,7 +11,9 @@ in {
       enable = true;
       defaultApplications = {
         "application/pdf" = ["org.pwmt.zathura.desktop"];
-        "text/html" = ["firefox.desktop"];
+        "text/html" = ["floorp.desktop"];
+        "x-scheme-handler/https" = ["floorp.desktop"];
+        "x-scheme-handler/http" = ["floorp.desktop"];
         "video/mp4" = ["mpv.desktop"];
         "video/webm" = ["mpv.desktop"];
         "video/avi" = ["mpv.desktop"];

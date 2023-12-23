@@ -20,6 +20,12 @@ in {
         {
           url = "https://www.phoronix.com/rss.php";
         }
+        {
+          url = "https://www.dexerto.com/feed";
+        }
+        {
+          url = "https://nichegamer.com/feed/";
+        }
       ];
     };
   };
