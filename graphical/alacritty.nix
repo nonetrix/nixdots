@@ -3,12 +3,9 @@
   pkgs,
   ...
 }: let
-  # Import the global variables file
   global = import ../global-var.nix;
 in {
-  # Configuration for the user specified in the global-var file
   home-manager.users.${global.username} = {pkgs, ...}: {
-    # Alacritty configuration
     programs.alacritty = {
       enable = true;
       settings = {
@@ -38,7 +35,7 @@ in {
           };
         };
 
-        # Catppuccin color scheme
+        # Catppuccin Mocha color scheme
         colors = {
           primary = {
             background = "#1E1E2E";

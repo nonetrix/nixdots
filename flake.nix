@@ -9,10 +9,9 @@
 
     hyprland.url = "github:hyprwm/Hyprland";
 
-    #This should be default change my mind
     split-monitor-workspaces = {
       url = "github:Duckonaut/split-monitor-workspaces";
-      inputs.hyprland.follows = "hyprland"; # <- make sure this line is present for the plugin to work as intended
+      inputs.hyprland.follows = "hyprland";
     };
 
     nur.url = "github:nix-community/NUR";

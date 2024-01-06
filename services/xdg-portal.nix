@@ -5,7 +5,7 @@
 }: {
   xdg.portal = {
     enable = true;
-    extraPortals = [ pkgs.xdg-desktop-portal-gtk pkgs.xdg-desktop-portal-hyprland ];
+    extraPortals = [pkgs.xdg-desktop-portal-gtk pkgs.xdg-desktop-portal-hyprland];
   };
 
   # Fix for https://github.com/NixOS/nixpkgs/issues/189851

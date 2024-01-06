@@ -17,20 +17,18 @@
     ffmpeg
     prismlauncher
     swww
-    wofi
     obs-studio
     krita
     spotify
     kdenlive
-    blender
+    blender-hip
     libreoffice
     livecaptions
     gamescope
     hyprshot
     mangohud
-    # Firefox, America: :/
-    # Firefox, Japan: HOLY SHIT :OOOOO
-    floorp
+    vivaldi
     heroic
+    openrgb
   ];
 }

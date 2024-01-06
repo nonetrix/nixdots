@@ -1,22 +1,10 @@
-#  ________         __                                 __
-# |  |  |  |.-----.|  |.----.-----.--------.-----.    |  |_.-----.
-# |  |  |  ||  -__||  ||  __|  _  |        |  -__|    |   _|  _  |
-# |________||_____||__||____|_____|__|__|__|_____|    |____|_____|
-#
-#                          ___ __ __
-# .--------.--.--.       .'  _|__|  |.-----.-----.
-# |        |  |  |     __|   _|  |  ||  -__|__ --|
-# |__|__|__|___  |    |__|__| |__|__||_____|_____|
-#          |_____|
 {
   config,
   pkgs,
   ...
 }: let
-  # Import the global variables file
   global = import ./global-var.nix;
 in {
-  # The version this configuration was made in
   home-manager.users.noah.home.stateVersion = "23.05";
   system.stateVersion = "24.05";
 
@@ -31,16 +19,14 @@ in {
     ./graphical/tk-themes/qt.nix
     ./graphical/tk-themes/themes.nix
     ./graphical/hyprland.nix
-    ./graphical/wofi.nix
+    ./graphical/fuzzel.nix
     ./graphical/fonts.nix
     ./graphical/codium.nix
     ./graphical/virt-manager.nix
-    ./graphical/openrgb.nix
     ./graphical/unconfigured.nix
     ./graphical/mako.nix
     ./graphical/steam.nix
     ./amd-gpu.nix
-    #./misc/hosts.nix
     ./misc/udev.nix
     ./misc/ntp.nix
     ./misc/default-programs.nix
@@ -59,22 +45,16 @@ in {
 
   nix.settings.experimental-features = ["nix-command" "flakes"];
 
-  # Enable boot loader and set boot mount point
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
-  # boot.loader.efi.efiSysMountPoint = "/boot/EFI";
 
-  # Networking
   networking.hostName = "nixos";
   networking.networkmanager.enable = true;
 
-  # Set time zone
   time.timeZone = "America/Chicago";
 
-  # Set default locale
   i18n.defaultLocale = "en_US.UTF-8";
 
-  # Set extra locale settings
   i18n.extraLocaleSettings = {
     LC_ADDRESS = "en_US.UTF-8";
     LC_IDENTIFICATION = "en_US.UTF-8";
@@ -87,7 +67,6 @@ in {
     LC_TIME = "en_US.UTF-8";
   };
 
-  # Create user with the name specified in the global-var file with Zsh shell, additional groups and no packages
   users.users.${global.username} = {
     isNormalUser = true;
     shell = pkgs.zsh;
@@ -96,7 +75,6 @@ in {
     packages = with pkgs; [];
   };
 
-  # Allow installing packages that are not free
   nixpkgs.config.allowUnfree = true;
 
   nix.settings.auto-optimise-store = true;

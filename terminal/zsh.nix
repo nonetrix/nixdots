@@ -3,7 +3,6 @@
   pkgs,
   ...
 }: let
-  # Import the global variables file
   global = import ../global-var.nix;
 in {
   programs.zsh.enable = true;
@@ -12,19 +11,23 @@ in {
     thefuck
   ];
 
-  # Configuration for the user specified in the global-var file
+  environment.variables = {
+    RADV_PERFTEST = "'rt'";
+    VKD3D_CONFIG = "dxr11,dxr";
+    MOZ_ENABLE_WAYLAND = "1";
+    EDITOR = "nvim";
+    NIXOS_OZONE_WL = "1";
+  };
+
   home-manager.users.${global.username} = {pkgs, ...}: {
-    # Starship configuration
     programs.starship = {
       enable = true;
     };
 
-    # Zoxide configuration
     programs.zoxide = {
       enable = true;
     };
 
-    # Zsh configuration
     programs.zsh = {
       enable = true;
 
@@ -36,7 +39,6 @@ in {
         "cat" = "bat -pp ";
         "grep" = "rg ";
         ".." = "cd ..";
-        # I am a genius for using the command-line aurguments like this
         "rm" = "echo you might want to use trash instead by invoking tp, if you are sure do rrm";
         "tp" = "trash put";
         "rrm" = "\\rm";

@@ -5,7 +5,6 @@
   inputs,
   ...
 }: let
-  # Import the global variables file
   global = import ../global-var.nix;
 in {
   home-manager.users.${global.username} = {pkgs, ...}: {
@@ -39,6 +38,10 @@ in {
         binde =, XF86AudioLowerVolume, exec, wpctl set-volume -l 1.4 @DEFAULT_AUDIO_SINK@ 1%-
         bind =, XF86AudioMute, exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
 
+        bind =, XF86AudioPlay, exec, playerctl play-pause
+        bind =, XF86AudioNext, exec, playerctl next
+        bind =, XF86AudioPrev, exec, playerctl previous
+
         bind = $mod, h, movefocus, l
         bind = $mod, l, movefocus, r
         bind = $mod, k, movefocus, u
@@ -49,17 +52,18 @@ in {
         bind = $mod SHIFT, k, movewindow, u
         bind = $mod SHIFT, j, movewindow, d
 
+        bind = $mod, s, togglesplit
 
         binde = $mod CTRL, l, resizeactive, 10 0
         binde = $mod CTRL, h, resizeactive, -10 0
         binde = $mod CTRL, k, resizeactive, 0 -10
         binde = $mod CTRL, j, resizeactive, 0 10
 
-        bind = $mod, B, exec, floorp
+        bind = $mod, B, exec, vivaldi
         bind = $mod, Return, exec, alacritty
 
-        bind = $mod, Space, exec, wofi --show drun
-        bind = $mod, E, exec, wofi-emoji
+        bind = $mod, Space, exec, fuzzel
+        bind = $mod, E, exec, BEMOJI_PICKER_CMD='fuzzel -p 🔍  -d' bemoji
 
         bindm = $mod, mouse:272, movewindow
         bindm = $mod, mouse:273, resizewindow
@@ -89,14 +93,10 @@ in {
           cursor_inactive_timeout = 4
         }
 
-        misc {
-          enable_swallow = true
-          swallow_regex = ^(Alacritty)$
-        } 
-
         input {
           follow_mouse = 1
           mouse_refocus = false
+          accel_profile = flat
         }
 
         windowrulev2 = stayfocused, title:^()$,class:^(steam)$
@@ -106,6 +106,7 @@ in {
         monitor=DP-3, 1920x1200, 1920x0, 1
 
         exec-once = swww init
+        #exec-once = fcitx5
       '';
     };
   };

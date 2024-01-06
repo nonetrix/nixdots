@@ -1,4 +1,3 @@
-# This file is just for refrence, you can safely ignore this file as it has no effect on the system
 {
   config,
   pkgs,
@@ -6,14 +5,24 @@
 }: let
   global = import ../global-var.nix;
 in {
+  # Dear god why
+  environment.systemPackages = with pkgs; [
+    xdg-terminal-exec
+  ];
+
   home-manager.users.${global.username} = {pkgs, ...}: {
+    home.file.".config/xdg-terminals.list".text = ''
+      Alacritty.desktop
+    '';
+
     xdg.mimeApps = {
       enable = true;
       defaultApplications = {
         "application/pdf" = ["org.pwmt.zathura.desktop"];
-        "text/html" = ["floorp.desktop"];
-        "x-scheme-handler/https" = ["floorp.desktop"];
-        "x-scheme-handler/http" = ["floorp.desktop"];
+        "text/html" = ["Vivaldi.desktop"];
+        "x-scheme-handler/https" = ["Vivaldi.desktop"];
+        "x-scheme-handler/http" = ["Vivaldi.desktop"];
+        "x-terminal-emulator" = ["Alacritty.desktop"];
         "video/mp4" = ["mpv.desktop"];
         "video/webm" = ["mpv.desktop"];
         "video/avi" = ["mpv.desktop"];
@@ -33,6 +42,7 @@ in {
         "image/svg" = ["imv.desktop"];
         "image/gif" = ["imv.desktop"];
         "inode/directory" = ["nemo.desktop"];
+        "text/plain" = ["nvim.desktop"];
       };
     };
   };

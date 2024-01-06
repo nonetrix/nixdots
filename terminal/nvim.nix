@@ -1,4 +1,3 @@
-# This file is just for refrence, you can safely ignore this file as it has no effect on the system
 {
   config,
   pkgs,
