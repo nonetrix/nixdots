@@ -42,6 +42,8 @@ in {
         bind =, XF86AudioNext, exec, playerctl next
         bind =, XF86AudioPrev, exec, playerctl previous
 
+        bind =, Print, exec, "satty-shot"
+
         bind = $mod, h, movefocus, l
         bind = $mod, l, movefocus, r
         bind = $mod, k, movefocus, u

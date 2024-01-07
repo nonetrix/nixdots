@@ -14,7 +14,6 @@
       rocmPackages.clr.icd
       rocm-opencl-icd
       rocm-opencl-runtime
-      amdvlk
     ];
   };
 

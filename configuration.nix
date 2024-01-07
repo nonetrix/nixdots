@@ -29,6 +29,9 @@ in {
     ./amd-gpu.nix
     ./misc/udev.nix
     ./misc/ntp.nix
+    ./misc/shell-scripts/edit.nix
+    ./misc/shell-scripts/extract.nix
+    ./misc/shell-scripts/satty-shot.nix
     ./misc/default-programs.nix
     ./services/pipewire.nix
     ./services/xorg.nix

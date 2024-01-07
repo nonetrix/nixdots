@@ -30,5 +30,8 @@
     vivaldi
     heroic
     openrgb
+    satty
+    grim
+    slurp
   ];
 }
