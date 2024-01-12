@@ -16,7 +16,7 @@
     yt-dlp
     ffmpeg
     prismlauncher
-    swww
+    wpaperd
     obs-studio
     krita
     spotify
@@ -27,11 +27,14 @@
     gamescope
     hyprshot
     mangohud
-    vivaldi
+    firefox
     heroic
     openrgb
     satty
     grim
     slurp
+    upscayl
+    networkmanagerapplet
+    vesktop
   ];
 }

@@ -1,6 +1,4 @@
-{ pkgs, ... }:
-
-let
+{pkgs, ...}: let
   tedit = pkgs.writeShellScriptBin "tedit" ''
     #!/bin/bash
 
@@ -35,7 +33,6 @@ let
         fi
     fi
   '';
-
 in {
-  environment.systemPackages = [ tedit ];
+  environment.systemPackages = [tedit];
 }

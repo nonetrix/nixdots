@@ -20,7 +20,8 @@
     killall
     xdg-user-dirs
     usbutils
-    fastfetch
+    pfetch
+    neofetch
     unimatrix
     bat
     lsd
@@ -34,6 +35,8 @@
     trashy
     alejandra
     wl-clipboard
+    wl-clip-persist
     bc
+    ncdu
   ];
 }

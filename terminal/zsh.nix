@@ -39,18 +39,15 @@ in {
         "cat" = "bat -pp ";
         "grep" = "rg ";
         ".." = "cd ..";
-        "rm" = "echo you might want to use trash instead by invoking tp, if you are sure do rrm";
         "tp" = "trash put";
-        "rrm" = "\\rm";
         "radar" = "curl https://sirocco.accuweather.com/nx_mosaic_640x480_public/sir/inmasiral_.gif | imv -";
         "forecast" = "curl wttr.in";
-        "neofetch" = "fastfetch";
         "umatrix" = "unimatrix";
         "gsrun" = "gamescope -W 1920 -H 1080 -r 165";
       };
 
       initExtraFirst = ''
-        fastfetch
+        pfetch
         export PATH="$HOME/.local/bin:$PATH"
         eval $(thefuck --alias)
 

@@ -19,9 +19,9 @@ in {
       enable = true;
       defaultApplications = {
         "application/pdf" = ["org.pwmt.zathura.desktop"];
-        "text/html" = ["Vivaldi.desktop"];
-        "x-scheme-handler/https" = ["Vivaldi.desktop"];
-        "x-scheme-handler/http" = ["Vivaldi.desktop"];
+        "text/html" = ["firefox.desktop"];
+        "x-scheme-handler/https" = ["firefox.desktop"];
+        "x-scheme-handler/http" = ["firefox.desktop"];
         "x-terminal-emulator" = ["Alacritty.desktop"];
         "video/mp4" = ["mpv.desktop"];
         "video/webm" = ["mpv.desktop"];

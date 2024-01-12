@@ -42,7 +42,8 @@ in {
         bind =, XF86AudioNext, exec, playerctl next
         bind =, XF86AudioPrev, exec, playerctl previous
 
-        bind =, Print, exec, "satty-shot"
+        bind = CTRL, Print, exec, satty-shot
+        bind =, Print, exec, hyprshot -m output
 
         bind = $mod, h, movefocus, l
         bind = $mod, l, movefocus, r
@@ -61,7 +62,7 @@ in {
         binde = $mod CTRL, k, resizeactive, 0 -10
         binde = $mod CTRL, j, resizeactive, 0 10
 
-        bind = $mod, B, exec, vivaldi
+        bind = $mod, B, exec, firefox
         bind = $mod, Return, exec, alacritty
 
         bind = $mod, Space, exec, fuzzel
@@ -91,8 +92,6 @@ in {
           gaps_in = 5
           gaps_out = 10
           col.active_border = rgba(a6e3a1ff)
-
-          cursor_inactive_timeout = 4
         }
 
         input {
@@ -101,14 +100,16 @@ in {
           accel_profile = flat
         }
 
-        windowrulev2 = stayfocused, title:^()$,class:^(steam)$
-        windowrulev2 = minsize 1 1, title:^()$,class:^(steam)$
+        windowrulev2 = noanim, class:^(com.gabm.satty)$
 
         monitor=DP-1, 1920x1080@165, 0x0, 1, vrr, 1
         monitor=DP-3, 1920x1200, 1920x0, 1
 
-        exec-once = swww init
-        #exec-once = fcitx5
+        exec-once = wpaperd
+        exec-once = wl-clip-persist --clipboard both
+        exec-once = waybar
+        exec-once = fcitx5
+        exec-once = nm-applet
       '';
     };
   };

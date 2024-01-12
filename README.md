@@ -25,18 +25,10 @@
 
 # TODO: 
 - Rewrite instructions
-- Integrate local AI model with Ollama
 - Finalize NeoVim configs
-- Stop using Codium and Nano
-- Look into dedicated graphical NeoVim client
 - Look into VimWiki
 - Write configs for laptop "server" for some kind of file server and sync
-- Correctly configure wallpapers and add slideshow etc.
-- Add Waybar
 - Declare Firefox/Floorp configurations
-- Setup Japanese input (again)
-- Setup screenshotting, ideally with Flameshot... Good luck with that
-- Look into how hard it would be to edit desktop files of Electron apps to make them run Wayland native (XWayland is good enough though)
 - Add hosts file back, maybe with a Systemd job to update them
 - Fix login screen showing Systemd messages on first boot
 - Add tty theme

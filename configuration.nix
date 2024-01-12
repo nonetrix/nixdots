@@ -19,19 +19,21 @@ in {
     ./graphical/tk-themes/qt.nix
     ./graphical/tk-themes/themes.nix
     ./graphical/hyprland.nix
+    ./graphical/waybar.nix
     ./graphical/fuzzel.nix
     ./graphical/fonts.nix
-    ./graphical/codium.nix
     ./graphical/virt-manager.nix
     ./graphical/unconfigured.nix
     ./graphical/mako.nix
     ./graphical/steam.nix
+    ./graphical/wpaperd.nix
     ./amd-gpu.nix
     ./misc/udev.nix
     ./misc/ntp.nix
     ./misc/shell-scripts/edit.nix
     ./misc/shell-scripts/extract.nix
     ./misc/shell-scripts/satty-shot.nix
+    ./misc/shell-scripts/sha256-from-url.nix
     ./misc/default-programs.nix
     ./services/pipewire.nix
     ./services/xorg.nix
@@ -41,6 +43,7 @@ in {
     ./services/flatpak.nix
     ./services/usb-automount.nix
     ./services/waydroid.nix
+    ./services/bluetooth.nix
     ./lanuage-support/keyboard/mozc.nix
     ./programming-lang/rust.nix
     ./programming-lang/python.nix
