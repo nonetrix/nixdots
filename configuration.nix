@@ -42,8 +42,8 @@ in {
     ./services/xdg-portal.nix
     ./services/flatpak.nix
     ./services/usb-automount.nix
-    ./services/waydroid.nix
     ./services/bluetooth.nix
+    ./services/keyring.nix
     ./lanuage-support/keyboard/mozc.nix
     ./programming-lang/rust.nix
     ./programming-lang/python.nix
@@ -53,6 +53,8 @@ in {
 
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
+
+  boot.kernelPackages = pkgs.linuxPackages_latest;
 
   networking.hostName = "nixos";
   networking.networkmanager.enable = true;
@@ -80,6 +82,8 @@ in {
     extraGroups = ["networkmanager" "wheel" "video" "audio"];
     packages = with pkgs; [];
   };
+
+  networking.firewall.enable = false;
 
   nixpkgs.config.allowUnfree = true;
 

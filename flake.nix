@@ -2,6 +2,7 @@
 {
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -9,8 +10,9 @@
 
     hyprland.url = "github:hyprwm/Hyprland";
 
+    # TODO: Change back when merged into upstream
     split-monitor-workspaces = {
-      url = "github:Duckonaut/split-monitor-workspaces";
+      url = "github:zjeffer/split-monitor-workspaces/fix/zjeffer/hyprlang-breaking-changes";
       inputs.hyprland.follows = "hyprland";
     };
 

@@ -12,8 +12,6 @@ in {
   ];
 
   environment.variables = {
-    RADV_PERFTEST = "'rt'";
-    VKD3D_CONFIG = "dxr11,dxr";
     MOZ_ENABLE_WAYLAND = "1";
     EDITOR = "nvim";
     NIXOS_OZONE_WL = "1";

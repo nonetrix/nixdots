@@ -1,12 +1,13 @@
 {
   config,
   pkgs,
+  lib,
   ...
 }: {
   environment.systemPackages = with pkgs; [
     zip
     unzip
-    fzf
+    skim
     tree
     btop
     nvtop-amd
@@ -29,7 +30,7 @@
     prismlauncher
     distrobox
     vulkan-tools
-    realesrgan-ncnn-vulkan
+    #realesrgan-ncnn-vulkan
     ani-cli
     udisks
     trashy
@@ -38,5 +39,14 @@
     wl-clip-persist
     bc
     ncdu
+    tor
+    i2p
+    steam-run
+    yazi
+    ueberzugpp
+    hexyl
+    yt-dlp
+    ffmpeg
+    git-lfs
   ];
 }

@@ -47,7 +47,7 @@ in {
           layer = "top";
           modules-left = ["hyprland/workspaces"];
           modules-center = ["hyprland/window"];
-          modules-right = ["tray"];
+          modules-right = ["tray" "clock"];
         }
       ];
     };

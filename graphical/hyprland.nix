@@ -91,14 +91,22 @@ in {
         general {
           gaps_in = 5
           gaps_out = 10
-          col.active_border = rgba(a6e3a1ff)
+          border_size = 2
+          col.active_border = rgba(f5c2e7ff)
+          col.inactive_border = rgba(1e1e2eff)
         }
 
         input {
           follow_mouse = 1
           mouse_refocus = false
           accel_profile = flat
+              }
+
+        # I have failed you
+        misc {
+          disable_hyprland_logo = true
         }
+
 
         windowrulev2 = noanim, class:^(com.gabm.satty)$
 
