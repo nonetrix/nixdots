@@ -118,7 +118,6 @@ in {
       };
     };
 
-
     home.file.".config/wpaperd/wallpaper.toml".text = ''
       [default]
       path = "/home/${global.username}/Pictures/Wallpapers/"

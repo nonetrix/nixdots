@@ -40,7 +40,7 @@ in {
         style=kvantum
       '';
 
-       ".config/qt5ct/qt5ct.conf".text = ''
+      ".config/qt5ct/qt5ct.conf".text = ''
         [Appearance]
         icon_theme=Papirus-Dark
         style=kvantum
