@@ -12,13 +12,6 @@
          |_____|                                                 
 ```
 
-## TODO:
-- Write config for server and phone via termux fork and flakes
-- Organize code
-- Generally clean code 
-- Check that comment style is consistent e.g. same wording
-- Add Ranger or Joshuto config
-
 ## Installation
 
 # Please note that unless you have a AMD GPU, 165Hz monitor, same username and the same disk name as well you might need to do some hacking
@@ -36,3 +29,8 @@
 - Later look into replacing login manager with Cosmic one if it becomes viable
 - Consider switching to Cosmic completely when it's fully out and has good Nix support
 - Install and setup Open Tablet Driver
+- Write config for server and phone via termux fork and flakes
+- Organize code
+- Generally clean code 
+- Check that comment style is consistent e.g. same wording
+- Add Ranger or Joshuto config

@@ -14,13 +14,6 @@ in {
       };
     };
   };
-  services = {
-    xserver = {
-      enable = true;
-      layout = "us";
-      xkbVariant = "";
-    };
-  };
 
   home-manager.users.${global.username} = {pkgs, ...}: {
     home.file.".icons/default".source = "${pkgs.catppuccin-cursors.mochaDark}/share/icons/Catppuccin-Mocha-Dark-Cursors";
