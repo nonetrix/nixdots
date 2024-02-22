@@ -76,6 +76,49 @@ in {
       };
     };
 
+    # Hyprland
+
+    # Source: https://hyprland.org/news/contestWinners/
+    home.file."Pictures/Wallpapers/wallpaper9.png" = {
+      source = builtins.fetchurl {
+        url = "https://hyprland.org/imgs/blog/contestWinners/Kath.png";
+        sha256 = "97bb1fed9b9e1b71fd8e814aec1bab71ddf5fbc6ffbd6a09c2d70b0881f8132e";
+      };
+    };
+
+    # Source: https://hyprland.org/news/contestWinners/
+    home.file."Pictures/Wallpapers/wallpaper10.png" = {
+      source = builtins.fetchurl {
+        url = "https://hyprland.org/imgs/blog/contestWinners/corndog.png";
+        sha256 = "31480b656e068192c72d852f3a678a9a1236ecc25e4fa225e1d637e390ca82e5";
+      };
+    };
+
+    # Source: https://hyprland.org/news/contestWinners/
+    home.file."Pictures/Wallpapers/wallpaper11.png" = {
+      source = builtins.fetchurl {
+        url = "https://hyprland.org/imgs/blog/contestWinners/Meptl.png";
+        sha256 = "b4a9c59e5266f87f1a95b885fa6ff97d220249d2da63e5bd58b1cc79e05e7e6c";
+      };
+    };
+
+    # Source: https://hyprland.org/news/contestWinners/
+    home.file."Pictures/Wallpapers/wallpaper12.png" = {
+      source = builtins.fetchurl {
+        url = "https://hyprland.org/imgs/blog/contestWinners/srev.png";
+        sha256 = "8cd6046db700e6d20b7915da00163115d1e205119e1e136a695ab8bfcb0616b1";
+      };
+    };
+
+    # Source: https://hyprland.org/news/contestWinners/
+    home.file."Pictures/Wallpapers/wallpaper13.png" = {
+      source = builtins.fetchurl {
+        url = "https://hyprland.org/imgs/blog/contestWinners/VDawg.png";
+        sha256 = "5cdcbb447ecee6359610eab57ff6b7e4f0ca19f5db4c64a6e5b62f2f5a3a3d8f";
+      };
+    };
+
+
     home.file.".config/wpaperd/wallpaper.toml".text = ''
       [default]
       path = "/home/${global.username}/Pictures/Wallpapers/"
