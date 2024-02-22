@@ -32,4 +32,3 @@
 - Organize code
 - Generally clean code 
 - Check that comment style is consistent e.g. same wording
-- Add Ranger or Joshuto config
