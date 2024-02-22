@@ -24,7 +24,6 @@
 - Declare Firefox/Floorp configurations
 - Add hosts file back, maybe with a Systemd job to update them
 - Fix login screen showing Systemd messages on first boot
-- Add tty theme
 - Look into disabling the 2nd display when in tty
 - Later look into replacing login manager with Cosmic one if it becomes viable
 - Consider switching to Cosmic completely when it's fully out and has good Nix support
