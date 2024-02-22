@@ -43,6 +43,12 @@ in {
         "image/gif" = ["imv.desktop"];
         "inode/directory" = ["nemo.desktop"];
         "text/plain" = ["nvim.desktop"];
+        "application/zip" = ["ark.desktop"];
+        "application/x-7z-compressed" = ["ark.desktop"];
+        "application/x-tar" = ["ark.desktop"];
+        "application/vnd.rar" = ["ark.desktop"];
+        "application/x-bzip2" = ["ark.desktop"];
+        "application/x-bzip" = ["ark.desktop"];
       };
     };
   };

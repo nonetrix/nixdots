@@ -48,5 +48,6 @@
     yt-dlp
     ffmpeg
     git-lfs
+    android-tools
   ];
 }

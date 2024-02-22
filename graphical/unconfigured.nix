@@ -40,5 +40,6 @@
     bless
     protonup-qt
     godot_4
+    protontricks
   ];
 }
