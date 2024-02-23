@@ -118,7 +118,6 @@ in {
         exec-once = waybar
         exec-once = fcitx5
         exec-once = nm-applet
-        exec-once = dolphin --daemon
       '';
     };
   };
