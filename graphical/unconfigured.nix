@@ -9,7 +9,8 @@
     anki-bin
     freetube
     zathura
-    imv
+    #imv
+    oculante
     mpv
     libsForQt5.ark
     prismlauncher
