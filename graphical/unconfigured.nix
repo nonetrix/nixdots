@@ -4,7 +4,6 @@
   ...
 }: {
   environment.systemPackages = with pkgs; [
-    cinnamon.nemo
     pavucontrol
     ungoogled-chromium
     anki-bin
@@ -41,5 +40,8 @@
     protonup-qt
     godot_4
     protontricks
+    libsForQt5.dolphin
+    libsForQt5.ffmpegthumbs
+    libsForQt5.kio-extras
   ];
 }

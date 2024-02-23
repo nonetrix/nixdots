@@ -5,6 +5,24 @@
 }: let
   global = import ../global-var.nix;
 in {
+  # Not sure why this works and seems hacky, might be missing something?
+  systemd.user.services.plasma-dolphin = {
+    unitConfig = {
+      Description = "Dolphin file manager";
+      PartOf = ["graphical-session.target"];
+    };
+    path = ["/run/current-system/sw"];
+    environment = {
+      # don't add this if you are not wayland
+      QT_QPA_PLATFORM = "wayland";
+    };
+    serviceConfig = {
+      Type = "dbus";
+      BusName = "org.freedesktop.FileManager1";
+      ExecStart = "${pkgs.dolphin}/bin/dolphin";
+    };
+  };
+
   # Dear god why
   environment.systemPackages = with pkgs; [
     xdg-terminal-exec
@@ -41,14 +59,14 @@ in {
         "image/avif" = ["imv.desktop"];
         "image/svg" = ["imv.desktop"];
         "image/gif" = ["imv.desktop"];
-        "inode/directory" = ["nemo.desktop"];
+        "inode/directory" = ["org.kde.dolphin.desktop"];
         "text/plain" = ["nvim.desktop"];
-        "application/zip" = ["ark.desktop"];
-        "application/x-7z-compressed" = ["ark.desktop"];
-        "application/x-tar" = ["ark.desktop"];
-        "application/vnd.rar" = ["ark.desktop"];
-        "application/x-bzip2" = ["ark.desktop"];
-        "application/x-bzip" = ["ark.desktop"];
+        "application/zip" = ["org.kde.ark.desktop"];
+        "application/x-7z-compressed" = ["org.kde.ark.desktop"];
+        "application/x-tar" = ["org.kde.ark.desktop"];
+        "application/vnd.rar" = ["org.kde.ark.desktop"];
+        "application/x-bzip2" = ["org.kde.ark.desktop"];
+        "application/x-bzip" = ["org.kde.ark.desktop"];
       };
     };
   };
