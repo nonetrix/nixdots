@@ -118,6 +118,32 @@ in {
       };
     };
 
+    # Astolfo
+
+    # Source: https://gelbooru.com/index.php?page=post&s=view&id=9185854&tags=astolfo_%28fate%29+rating%3Ageneral
+    home.file."Pictures/Wallpapers/wallpaper14.jpg" = {
+      source = builtins.fetchurl {
+        url = "https://img3.gelbooru.com/images/d4/ba/d4ba6f6342af04c99f7a8231c1dcdacf.jpg";
+        sha256 = "d6576ae008421250e6b7093da074314efe7555e8b645b920d1642e422aaaf58f";
+      };
+    };
+
+   # Source: https://gelbooru.com/index.php?page=post&s=view&id=7824618&tags=astolfo_%28fate%29+rating%3Ageneral
+    home.file."Pictures/Wallpapers/wallpaper15.jpg" = {
+      source = builtins.fetchurl {
+        url = "https://img3.gelbooru.com/images/96/41/964105d020a4a7b6c0599cfbaeb6ccb4.jpg";
+        sha256 = "8f36facb2ea3e4efe8aca4e7b00f8a133d1367e5cefc1a5b71624dae7c3860d0";
+      };
+    };
+
+   # Source: https://gelbooru.com/index.php?page=post&s=view&id=7854963&tags=astolfo_%28fate%29+rating%3Ageneral
+    home.file."Pictures/Wallpapers/wallpaper16.jpg" = {
+      source = builtins.fetchurl {
+        url = "https://img3.gelbooru.com/images/9f/0c/9f0c0c1990da1501417754cd10322597.jpg";
+        sha256 = "474bd3393d945133764bce46d7f9fc6aeb0574bde5408beb06248645031e01a8";
+      };
+    };
+
     home.file.".config/wpaperd/wallpaper.toml".text = ''
       [default]
       path = "/home/${global.username}/Pictures/Wallpapers/"
