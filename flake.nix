@@ -12,7 +12,7 @@
 
     # TODO: Change back when merged into upstream
     split-monitor-workspaces = {
-      url = "github:zjeffer/split-monitor-workspaces/fix/zjeffer/hyprlang-breaking-changes";
+      url = "github:Duckonaut/split-monitor-workspaces";
       inputs.hyprland.follows = "hyprland";
     };
 
