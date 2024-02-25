@@ -8,9 +8,23 @@ in {
   home-manager.users.${global.username} = {pkgs, ...}: {
     home.file.".config/wezterm/wezterm.lua".text = ''
       local wezterm = require 'wezterm'
-      local c = wezterm.config_builder()
+      local config = wezterm.config_builder()
 
-      wezterm.plugin.require("https://github.com/nekowinston/wezterm-bar").apply_to_config(c, {
+      config.launch_menu = {
+        {
+          label = 'AI container',
+          args = {'distrobox', 'enter', 'ai'},
+        },
+        {
+          args = {'btop'},
+        },
+        {
+          label = 'GPU usage',
+          args = {'nvtop'}
+        },
+      },
+
+      wezterm.plugin.require("https://github.com/nekowinston/wezterm-bar").apply_to_config(config, {
         position = "bottom",
         max_width = 32,
         dividers = "slant_right", -- or "slant_left", "arrows", "rounded", false
@@ -43,12 +57,12 @@ in {
         },
       })
 
-      return {
-        font = wezterm.font 'JetBrainsMono Nerd Font',
-        use_fancy_tab_bar = false,
-        window_background_opacity = 0.9,
-        color_scheme = "Catppuccin Mocha",
-      }
+      config.font = wezterm.font 'JetBrainsMono Nerd Font'
+      config.use_fancy_tab_bar = false
+      config.window_background_opacity = 0.9
+      config.color_scheme = "Catppuccin Mocha"
+
+      return config
     '';
   };
 }
