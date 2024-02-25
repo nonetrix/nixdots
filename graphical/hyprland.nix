@@ -63,7 +63,7 @@ in {
         binde = $mod CTRL, j, resizeactive, 0 10
 
         bind = $mod, B, exec, firefox
-        bind = $mod, Return, exec, alacritty
+        bind = $mod, Return, exec, wezterm
 
         bind = $mod, Space, exec, fuzzel
         bind = $mod, E, exec, BEMOJI_PICKER_CMD='fuzzel -p 🔍  -d' bemoji

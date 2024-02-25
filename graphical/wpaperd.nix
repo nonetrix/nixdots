@@ -128,7 +128,7 @@ in {
       };
     };
 
-   # Source: https://gelbooru.com/index.php?page=post&s=view&id=7824618&tags=astolfo_%28fate%29+rating%3Ageneral
+    # Source: https://gelbooru.com/index.php?page=post&s=view&id=7824618&tags=astolfo_%28fate%29+rating%3Ageneral
     home.file."Pictures/Wallpapers/wallpaper15.jpg" = {
       source = builtins.fetchurl {
         url = "https://img3.gelbooru.com/images/96/41/964105d020a4a7b6c0599cfbaeb6ccb4.jpg";
@@ -136,7 +136,7 @@ in {
       };
     };
 
-   # Source: https://gelbooru.com/index.php?page=post&s=view&id=7854963&tags=astolfo_%28fate%29+rating%3Ageneral
+    # Source: https://gelbooru.com/index.php?page=post&s=view&id=7854963&tags=astolfo_%28fate%29+rating%3Ageneral
     home.file."Pictures/Wallpapers/wallpaper16.jpg" = {
       source = builtins.fetchurl {
         url = "https://img3.gelbooru.com/images/9f/0c/9f0c0c1990da1501417754cd10322597.jpg";

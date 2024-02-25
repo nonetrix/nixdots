@@ -21,7 +21,7 @@
     killall
     xdg-user-dirs
     usbutils
-    pfetch
+    fastfetch
     neofetch
     unimatrix
     bat
@@ -43,7 +43,6 @@
     i2p
     steam-run
     yazi
-    ueberzugpp
     hexyl
     yt-dlp
     ffmpeg

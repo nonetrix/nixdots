@@ -18,7 +18,7 @@ in {
       font=JetBrainsMono Nerd Font:size=20
       line-height=20
       fields=name,generic,comment,categories,filename,keywords
-      terminal=alacritty -e
+      terminal=wezterm -e
       prompt="❯   "
       layer=overlay
       [colors]

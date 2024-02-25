@@ -30,7 +30,7 @@ in {
 
   home-manager.users.${global.username} = {pkgs, ...}: {
     home.file.".config/xdg-terminals.list".text = ''
-      Alacritty.desktop
+      org.wezfurlong.wezterm.desktop
     '';
 
     xdg.mimeApps = {

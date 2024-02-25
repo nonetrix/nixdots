@@ -45,7 +45,7 @@ in {
       };
 
       initExtraFirst = ''
-        pfetch
+        fastfetch
         export PATH="$HOME/.local/bin:$PATH"
         eval $(thefuck --alias)
 

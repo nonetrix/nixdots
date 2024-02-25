@@ -44,5 +44,6 @@
     libsForQt5.dolphin
     libsForQt5.ffmpegthumbs
     libsForQt5.kio-extras
+    wezterm
   ];
 }
