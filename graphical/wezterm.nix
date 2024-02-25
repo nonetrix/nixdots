@@ -61,6 +61,7 @@ in {
       config.use_fancy_tab_bar = false
       config.window_background_opacity = 0.9
       config.color_scheme = "Catppuccin Mocha"
+      config.window_close_confirmation = 'NeverPrompt'
 
       return config
     '';
