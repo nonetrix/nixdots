@@ -47,7 +47,7 @@ in {
     ./services/bluetooth.nix
     ./services/keyring.nix
     ./services/sshd.nix
-    ./lanuage-support/keyboard/mozc.nix
+    ./language-support/keyboard/mozc.nix
     ./programming-lang/rust.nix
     ./programming-lang/python.nix
   ];
