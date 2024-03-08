@@ -2,9 +2,7 @@
   config,
   pkgs,
   ...
-}: let
-  global = import ../global-var.nix;
-in {
+}: {
   services.greetd = {
     enable = true;
     settings = {
@@ -24,9 +22,5 @@ in {
     TTYReset = true;
     TTYVHangup = true;
     TTYVTDisallocate = true;
-  };
-
-  home-manager.users.${global.username} = {pkgs, ...}: {
-    home.file.".icons/default".source = "${pkgs.catppuccin-cursors.mochaDark}/share/icons/Catppuccin-Mocha-Dark-Cursors";
   };
 }

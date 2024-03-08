@@ -19,7 +19,7 @@
     krita
     spotify
     kdenlive
-    blender-hip
+    #blender-hip
     libreoffice
     livecaptions
     gamescope
@@ -45,5 +45,7 @@
     libsForQt5.ffmpegthumbs
     libsForQt5.kio-extras
     wezterm
+    alacritty
+    hyprpicker
   ];
 }

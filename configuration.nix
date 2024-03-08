@@ -35,8 +35,10 @@ in {
     ./misc/shell-scripts/satty-shot.nix
     ./misc/shell-scripts/sha256-from-url.nix
     ./misc/default-programs.nix
+    ./misc/kernel.nix
+    ./services/ollama.nix
     ./services/pipewire.nix
-    ./services/xorg.nix
+    ./services/greetd.nix
     ./services/polkit.nix
     ./services/docker.nix
     ./services/xdg-portal.nix
@@ -44,18 +46,23 @@ in {
     ./services/usb-automount.nix
     ./services/bluetooth.nix
     ./services/keyring.nix
+    ./services/sshd.nix
     ./lanuage-support/keyboard/mozc.nix
     ./programming-lang/rust.nix
     ./programming-lang/python.nix
   ];
-
   nix.settings.experimental-features = ["nix-command" "flakes"];
 
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  boot.kernelPackages = pkgs.linuxPackages_latest;
-  boot.kernelParams = ["vt.default_red=30,243,166,249,137,245,148,186,88,243,166,249,137,245,148,166" "vt.default_grn=30,139,227,226,180,194,226,194,91,139,227,226,180,194,226,173" "vt.default_blu=46,168,161,175,250,231,213,222,112,168,161,175,250,231,213,200"];
+  #nix.settings.system-features = [ "benchmark" "big-parallel" "kvm" "nixos-test" "gccarch-znver2" ];
+
+  #nixpkgs.hostPlatform = {
+  #  gcc.arch = "znver2";
+  #  gcc.tune = "znver2";
+  #  system = "x86_64-linux";
+  #};
 
   networking.hostName = "nixos";
   networking.networkmanager.enable = true;

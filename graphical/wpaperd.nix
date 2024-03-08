@@ -120,14 +120,6 @@ in {
 
     # Astolfo
 
-    # Source: https://gelbooru.com/index.php?page=post&s=view&id=9185854&tags=astolfo_%28fate%29+rating%3Ageneral
-    home.file."Pictures/Wallpapers/wallpaper14.jpg" = {
-      source = builtins.fetchurl {
-        url = "https://img3.gelbooru.com/images/d4/ba/d4ba6f6342af04c99f7a8231c1dcdacf.jpg";
-        sha256 = "d6576ae008421250e6b7093da074314efe7555e8b645b920d1642e422aaaf58f";
-      };
-    };
-
     # Source: https://gelbooru.com/index.php?page=post&s=view&id=7824618&tags=astolfo_%28fate%29+rating%3Ageneral
     home.file."Pictures/Wallpapers/wallpaper15.jpg" = {
       source = builtins.fetchurl {

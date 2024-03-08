@@ -8,6 +8,8 @@
   global = import ../global-var.nix;
 in {
   home-manager.users.${global.username} = {pkgs, ...}: {
+    home.file.".icons/default".source = "${pkgs.catppuccin-cursors.mochaDark}/share/icons/Catppuccin-Mocha-Dark-Cursors";
+
     wayland.windowManager.hyprland = {
       package = inputs.hyprland.packages.${pkgs.system}.hyprland;
       enable = true;
@@ -45,6 +47,8 @@ in {
         bind = CTRL, Print, exec, satty-shot
         bind =, Print, exec, hyprshot -m output
 
+        bind = $mod, p, exec, wl-copy $(hyprpicker)
+
         bind = $mod, h, movefocus, l
         bind = $mod, l, movefocus, r
         bind = $mod, k, movefocus, u
@@ -79,6 +83,9 @@ in {
         decoration {
           rounding = 8
 
+          blurls = waybar
+          blurls = launcher
+
           blur {
             enabled = true
             size = 5
@@ -109,9 +116,11 @@ in {
 
 
         windowrulev2 = noanim, class:^(com.gabm.satty)$
+        layerrule = ignorealpha, waybar
+        layerrule = ignorealpha, launcher
 
-        monitor=DP-1, 1920x1080@165, 0x0, 1, vrr, 1
-        monitor=DP-3, 1920x1200, 1920x0, 1
+        monitor=DP-1, 1920x1200, 1920x0, 1
+        monitor=DP-2, 1920x1080@165, 0x0, 1, vrr, 1
 
         exec-once = wpaperd
         exec-once = wl-clip-persist --clipboard both

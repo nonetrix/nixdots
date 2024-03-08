@@ -39,10 +39,23 @@ in {
         @define-color pink      #f5c2e7;
         @define-color flamingo  #f2cdcd;
         @define-color rosewater #f5e0dc;
+
+        window#waybar {
+ 	  /* you can also GTK3 CSS functions! */
+  	  background-color: alpha(@base, 0.9);
+  	  border: 2px solid @pink;
+          border-radius: 8px;
+          font-family: "JetBrainsMono Nerd Font";
+          color: @text;
+	}
       '';
 
       settings = [
         {
+          margin-top = 4;
+          margin-bottom = 4;
+          margin-left = 10;
+          margin-right = 10;
           height = 30;
           layer = "top";
           modules-left = ["hyprland/workspaces"];
