@@ -3,6 +3,8 @@
   pkgs,
   ...
 }: {
-  services.ollama.enable = true;
-  services.ollama.acceleration = "rocm";
+  services = {
+    ollama.enable = true;
+    ollama.acceleration = "rocm";
+  };
 }
