@@ -24,7 +24,6 @@ in {
     ./graphical/fonts.nix
     ./graphical/virt-manager.nix
     ./graphical/unconfigured.nix
-    ./graphical/mako.nix
     ./graphical/steam.nix
     ./graphical/wpaperd.nix
     ./amd-gpu.nix
@@ -47,6 +46,7 @@ in {
     ./services/bluetooth.nix
     ./services/keyring.nix
     ./services/sshd.nix
+    ./services/mako.nix
     ./language-support/keyboard/mozc.nix
     ./programming-lang/rust.nix
     ./programming-lang/python.nix
