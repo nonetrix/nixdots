@@ -75,33 +75,33 @@ in {
           vim.cmd.colorscheme "catppuccin"
       '';
 
-      plugins = [
-        pkgs.vimPlugins.catppuccin-nvim
-        pkgs.vimPlugins.vim-polyglot
-        pkgs.vimPlugins.indent-blankline-nvim
-        pkgs.vimPlugins.vim-commentary
-        pkgs.vimPlugins.nvim-web-devicons
-        pkgs.vimPlugins.lualine-nvim
-        pkgs.vimPlugins.vim-illuminate
-        pkgs.vimPlugins.vim-css-color
-        pkgs.vimPlugins.nvim-tree-lua
-        pkgs.vimPlugins.zoxide-vim
-        pkgs.vimPlugins.dashboard-nvim
-        pkgs.vimPlugins.which-key-nvim
-        pkgs.vimPlugins.gitsigns-nvim
-        pkgs.vimPlugins.twilight-nvim
-        pkgs.vimPlugins.delimitMate
-        pkgs.vimPlugins.todo-comments-nvim
-        pkgs.vimPlugins.hop-nvim
-        pkgs.vimPlugins.nvim-surround
-        pkgs.vimPlugins.nvim-cmp
-        pkgs.vimPlugins.cmp-nvim-lsp
-        pkgs.vimPlugins.nvim-lspconfig
-        pkgs.vimPlugins.trouble-nvim
-        pkgs.vimPlugins.telescope-nvim
-        pkgs.vimPlugins.telescope-project-nvim
-        pkgs.vimPlugins.dressing-nvim
-        pkgs.vimPlugins.nvim-treesitter
+      plugins = with pkgs.vimPlugins; [
+        catppuccin-nvim
+        vim-polyglot
+        indent-blankline-nvim
+        vim-commentary
+        nvim-web-devicons
+        lualine-nvim
+        vim-illuminate
+        vim-css-color
+        nvim-tree-lua
+        zoxide-vim
+        dashboard-nvim
+        which-key-nvim
+        gitsigns-nvim
+        twilight-nvim
+        delimitMate
+        todo-comments-nvim
+        hop-nvim
+        nvim-surround
+        nvim-cmp
+        cmp-nvim-lsp
+        nvim-lspconfig
+        trouble-nvim
+        telescope-nvim
+        telescope-project-nvim
+        dressing-nvim
+        nvim-treesitter
       ];
     };
   };
