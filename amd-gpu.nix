@@ -9,6 +9,8 @@
 
   hardware.opengl = {
     enable = true;
+    driSupport = true;
+    driSupport32Bit = true;
 
     extraPackages = with pkgs; [
       rocmPackages.clr.icd
@@ -20,9 +22,6 @@
   systemd.tmpfiles.rules = [
     "L+    /opt/rocm/hip   -    -    -     -    ${pkgs.rocmPackages.clr}"
   ];
-
-  hardware.opengl.driSupport = true;
-  hardware.opengl.driSupport32Bit = true;
 
   environment.systemPackages = [
     pkgs.rocmPackages.rocm-smi
