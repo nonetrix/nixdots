@@ -8,7 +8,7 @@ in {
   home-manager.users.${global.username} = {pkgs, ...}: {
     programs.wezterm.enable = true;
 
-    home.file.".config/wezterm/wezterm.lua".text = ''
+    programs.wezterm.extraConfig = ''
       local wezterm = require 'wezterm'
       local config = wezterm.config_builder()
 

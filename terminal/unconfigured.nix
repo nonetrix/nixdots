@@ -48,5 +48,6 @@
     ffmpeg
     git-lfs
     android-tools
+    p7zip
   ];
 }
