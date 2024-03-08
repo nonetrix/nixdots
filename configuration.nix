@@ -6,7 +6,7 @@
   global = import ./global-var.nix;
 in {
   home-manager.users.noah.home.stateVersion = "23.05";
-  system.stateVersion = "24.05";
+  system.stateVersion = "25.05";
 
   imports = [
     ./hardware-configuration.nix
@@ -65,8 +65,11 @@ in {
   #  system = "x86_64-linux";
   #};
 
-  networking.hostName = "nixos";
-  networking.networkmanager.enable = true;
+  networking = {
+    hostName = "nixos";
+    networkmanager.enable = true;
+    firewall.enable = false;
+  };
 
   time.timeZone = "America/Chicago";
 
@@ -93,8 +96,6 @@ in {
     extraGroups = ["networkmanager" "wheel" "video" "audio"];
     packages = with pkgs; [];
   };
-
-  networking.firewall.enable = false;
 
   nixpkgs.config.allowUnfree = true;
 
