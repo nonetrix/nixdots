@@ -51,10 +51,11 @@ in {
     ./programming-lang/rust.nix
     ./programming-lang/python.nix
   ];
-  nix.settings.experimental-features = ["nix-command" "flakes"];
 
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
+  boot.loader = {
+    systemd-boot.enable = true;
+    efi.canTouchEfiVariables = true;
+  };
 
   #nix.settings.system-features = [ "benchmark" "big-parallel" "kvm" "nixos-test" "gccarch-znver2" ];
 
@@ -69,18 +70,20 @@ in {
 
   time.timeZone = "America/Chicago";
 
-  i18n.defaultLocale = "en_US.UTF-8";
+  i18n = {
+    defaultLocale = "en_US.UTF-8";
 
-  i18n.extraLocaleSettings = {
-    LC_ADDRESS = "en_US.UTF-8";
-    LC_IDENTIFICATION = "en_US.UTF-8";
-    LC_MEASUREMENT = "en_US.UTF-8";
-    LC_MONETARY = "en_US.UTF-8";
-    LC_NAME = "en_US.UTF-8";
-    LC_NUMERIC = "en_US.UTF-8";
-    LC_PAPER = "en_US.UTF-8";
-    LC_TELEPHONE = "en_US.UTF-8";
-    LC_TIME = "en_US.UTF-8";
+    extraLocaleSettings = {
+      LC_ADDRESS = "en_US.UTF-8";
+      LC_IDENTIFICATION = "en_US.UTF-8";
+      LC_MEASUREMENT = "en_US.UTF-8";
+      LC_MONETARY = "en_US.UTF-8";
+      LC_NAME = "en_US.UTF-8";
+      LC_NUMERIC = "en_US.UTF-8";
+      LC_PAPER = "en_US.UTF-8";
+      LC_TELEPHONE = "en_US.UTF-8";
+      LC_TIME = "en_US.UTF-8";
+    };
   };
 
   users.users.${global.username} = {
@@ -95,11 +98,16 @@ in {
 
   nixpkgs.config.allowUnfree = true;
 
-  nix.settings.auto-optimise-store = true;
+  nix = {
+    settings = {
+      auto-optimise-store = true;
+      experimental-features = ["nix-command" "flakes"];
+    };
 
-  nix.gc = {
-    automatic = true;
-    dates = "weekly";
-    options = "--delete-older-than 30d";
+    gc = {
+      automatic = true;
+      dates = "weekly";
+      options = "--delete-older-than 30d";
+    };
   };
 }
