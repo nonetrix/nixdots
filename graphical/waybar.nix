@@ -9,6 +9,7 @@ in {
     programs.waybar = {
       enable = true;
       style = ''
+               /* Catppuccin Mocha Colors */
                @define-color base   #1e1e2e;
                @define-color mantle #181825;
                @define-color crust  #11111b;

@@ -5,6 +5,7 @@
 }: let
   global = import ../global-var.nix;
 in {
+  # TODO: Remove Dolphin shit add desktop file for Yazi call it a day
   # Not sure why this works and seems hacky, might be missing something?
   systemd.user.services.plasma-dolphin = {
     unitConfig = {
@@ -13,6 +14,7 @@ in {
     };
     path = ["/run/current-system/sw"];
     environment = {
+      # TODO: Why is this here?
       # don't add this if you are not wayland
       QT_QPA_PLATFORM = "wayland";
     };
@@ -23,7 +25,8 @@ in {
     };
   };
 
-  # Dear god why
+  # TODO: Remove this abomination when there is better way to set default terminal, GNOME devs to blame once again... Sigh
+  # Sets default terminal
   environment.systemPackages = with pkgs; [
     xdg-terminal-exec
   ];
@@ -33,6 +36,7 @@ in {
       org.wezfurlong.wezterm.desktop
     '';
 
+    # Sets default apps
     xdg.mimeApps = {
       enable = true;
       defaultApplications = {

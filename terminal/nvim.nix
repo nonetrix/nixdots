@@ -6,6 +6,7 @@
   global = import ../global-var.nix;
 in {
   home-manager.users.${global.username} = {pkgs, ...}: {
+    # TODO: Put more time into Neovim and make better configs
     programs.neovim = {
       enable = true;
       extraConfig = ''

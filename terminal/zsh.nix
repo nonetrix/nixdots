@@ -20,11 +20,14 @@ in {
   };
 
   home-manager.users.${global.username} = {pkgs, ...}: {
+    # TODO: change tab menu when selecting files
     programs = {
+      # Nice shell prompt
       starship = {
         enable = true;
       };
 
+      # Allows for you to quickly change directories
       zoxide = {
         enable = true;
       };
@@ -32,6 +35,7 @@ in {
       zsh = {
         enable = true;
 
+        # Ignores duplicates in history
         history.ignoreDups = true;
 
         # Aliases

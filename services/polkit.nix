@@ -4,6 +4,7 @@
   ...
 }: {
   systemd = {
+    # Pretty much sudo but a GUI prompt, just like sudo likes to have security issues :-)
     user.services.polkit-gnome-authentication-agent-1 = {
       description = "polkit-gnome-authentication-agent-1";
       wantedBy = ["graphical-session.target"];

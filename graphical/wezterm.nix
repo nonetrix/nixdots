@@ -13,6 +13,7 @@ in {
         local wezterm = require 'wezterm'
         local config = wezterm.config_builder()
 
+        -- Controls what is seen when right clicking plus icon
         config.launch_menu = {
           {
             label = 'AI container',

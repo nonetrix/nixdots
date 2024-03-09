@@ -22,6 +22,7 @@ options=(
     "Rewrite as joking"
     "Rewrite as kawaii"
     "Rewrite as email"
+    "Unload the model"
 )
 
 prompts=(
@@ -46,64 +47,52 @@ selected_option=$(printf "%s\n" "''${options[@]}" | fuzzel -d -p "Select an opti
 
 case $selected_option in
     "Correct grammar")
-        # Action for Correct grammar
-        ollama run mixtral "''${prompts[0]}" | wl-copy
+        ollama run $model "''${prompts[0]}" | wl-copy
         ;;
     "Convert to bullet point")
-        # Action for Convert to bullet point
-        ollama run mixtral "''${prompts[1]}" | wl-copy
+        ollama run $model "''${prompts[1]}" | wl-copy
         ;;
     "Summarize")
-        # Action for Summarize
-        ollama run mixtral "''${prompts[2]}" | wl-copy
+        ollama run $model "''${prompts[2]}" | wl-copy
         ;;
     "Paraphrase")
-        # Action for Paraphrase
-        ollama run mixtral "''${prompts[3]}" | wl-copy
+        ollama run $model "''${prompts[3]}" | wl-copy
         ;;
     "Shorten")
-        # Action for Shorten
-        ollama run mixtral "''${prompts[4]}" | wl-copy
+        ollama run $model "''${prompts[4]}" | wl-copy
         ;;
     "To English (inaccurate maybe)")
-        # Action for To English (inaccurate maybe)
-        ollama run mixtral "''${prompts[5]}" | wl-copy
+        ollama run $model "''${prompts[5]}" | wl-copy
         ;;
     "Rewrite as neutral")
-        # Action for Rewrite as neutral
-        ollama run mixtral "''${prompts[6]}" | wl-copy
+        ollama run $model "''${prompts[6]}" | wl-copy
         ;;
     "Rewrite as casual")
-        # Action for Rewrite as casual
-        ollama run mixtral "''${prompts[7]}" | wl-copy
+        ollama run $model "''${prompts[7]}" | wl-copy
         ;;
     "Rewrite as professional")
-        # Action for Rewrite as professional
-        ollama run mixtral "''${prompts[8]}" | wl-copy
+        ollama run $model "''${prompts[8]}" | wl-copy
         ;;
     "Rewrite as happy")
-        # Action for Rewrite as happy
-        ollama run mixtral "''${prompts[9]}" | wl-copy
+        ollama run $model "''${prompts[9]}" | wl-copy
         ;;
     "Rewrite as sad")
-        # Action for Rewrite as sad
-        ollama run mixtral "''${prompts[10]}" | wl-copy
+        ollama run $model "''${prompts[10]}" | wl-copy
         ;;
     "Rewrite as angry")
-        # Action for Rewrite as angry
-        ollama run mixtral "''${prompts[11]}" | wl-copy
+        ollama run $model "''${prompts[11]}" | wl-copy
         ;;
     "Rewrite as joking")
-        # Action for Rewrite as joking
-        ollama run mixtral "''${prompts[12]}" | wl-copy
+        ollama run $model "''${prompts[12]}" | wl-copy
         ;;
     "Rewrite as kawaii")
-        # Action for Rewrite as kawaii
-        ollama run mixtral "''${prompts[13]}" | wl-copy
+        ollama run $model "''${prompts[13]}" | wl-copy
         ;;
     "Rewrite as email")
-        # Action for Rewrite as email
-        ollama run mixtral "''${prompts[14]}" | wl-copy
+        ollama run $model "''${prompts[14]}" | wl-copy
+        ;;
+    "Unload the model")
+        curl http://localhost:11434/api/generate -d "{\"model\": \"''${model}\", \"keep_alive\": 0}"
         ;;
     *)
         echo "Invalid option"

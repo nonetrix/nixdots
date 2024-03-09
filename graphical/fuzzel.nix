@@ -7,10 +7,11 @@
 in {
   environment.systemPackages = with pkgs; [
     fuzzel
-    bemoji
+    bemoji # Emoji menu
   ];
 
   home-manager.users.${global.username} = {pkgs, ...}: {
+    # Catppuccin Mocha Pink theme
     home.file.".config/fuzzel/fuzzel.ini".text = ''
       dpi-aware=no
       icon-theme=Papirus-Dark

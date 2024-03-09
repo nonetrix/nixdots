@@ -3,6 +3,7 @@
   pkgs,
   ...
 }: {
+  # Needed for OpenRGB to work
   services.udev.extraRules = ''
     KERNEL=="i2c-[0-99]*", TAG+="uaccess"
     KERNEL=="port", TAG+="uaccess"

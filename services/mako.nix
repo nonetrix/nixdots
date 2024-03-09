@@ -4,6 +4,7 @@
   ...
 }: {
   home-manager.users.noah = {
+    # Catppuccin Mocha
     services.mako = {
       enable = true;
       defaultTimeout = 4000;

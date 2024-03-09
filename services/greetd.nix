@@ -3,6 +3,7 @@
   pkgs,
   ...
 }: {
+  # Seems bloated, just manages display managers but shouldn't the display manager do that? Whatever
   services.greetd = {
     enable = true;
     settings = {
@@ -13,6 +14,7 @@
     };
   };
 
+  # TODO: Remove this if it's ever fixed OTB
   systemd.services.greetd.serviceConfig = {
     Type = "idle";
     StandardInput = "tty";

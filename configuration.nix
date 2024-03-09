@@ -17,7 +17,6 @@ in {
     ./graphical/wezterm.nix
     ./graphical/tk-themes/gtk.nix
     ./graphical/tk-themes/qt.nix
-    ./graphical/tk-themes/themes.nix
     ./graphical/hyprland.nix
     ./graphical/waybar.nix
     ./graphical/fuzzel.nix
@@ -49,15 +48,15 @@ in {
     ./services/sshd.nix
     ./services/mako.nix
     ./language-support/keyboard/mozc.nix
-    ./programming-lang/rust.nix
-    ./programming-lang/python.nix
   ];
 
+  # TODO: Figure out how the fuck to switch to Grub, systemd-boot is ass. Also, I might be using BIOS? God I fucking hate BIOS and UEFI boot shit kill me now
   boot.loader = {
     systemd-boot.enable = true;
     efi.canTouchEfiVariables = true;
   };
 
+  # Does Nixpkgs even test builds? Shit constantly breaking
   #nix.settings.system-features = [ "benchmark" "big-parallel" "kvm" "nixos-test" "gccarch-znver2" ];
 
   #nixpkgs.hostPlatform = {
@@ -69,7 +68,7 @@ in {
   networking = {
     hostName = "nixos";
     networkmanager.enable = true;
-    firewall.enable = false;
+    firewall.enable = false; # Fixes not being able to connect from my phone, maybe not ideal
   };
 
   time.timeZone = "America/Chicago";
@@ -95,9 +94,9 @@ in {
     shell = pkgs.zsh;
     description = "user";
     extraGroups = ["networkmanager" "wheel" "video" "audio"];
-    packages = with pkgs; [];
   };
 
+  # Allows closed source software
   nixpkgs.config.allowUnfree = true;
 
   nix = {
@@ -106,10 +105,11 @@ in {
       experimental-features = ["nix-command" "flakes"];
     };
 
+    # Collect garbage
     gc = {
       automatic = true;
-      dates = "weekly";
-      options = "--delete-older-than 30d";
+      dates = "daily";
+      options = "--delete-older-than 4d";
     };
   };
 }

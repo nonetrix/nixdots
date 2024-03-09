@@ -1,4 +1,5 @@
 {
   username = "noah";
-  mod = "Mod4";
+  # Modifer key for keybindings
+  mod = "Mod4"; # Windows key
 }
