@@ -80,6 +80,9 @@ in {
         bind = $mod, c, killactive
         bind = $mod, q, exit
 
+        bind = $mod, a, exec, alacritty -e ollama run mixtral
+        bind = $mod SHIFT, a, exec, llm-actions
+
         decoration {
           rounding = 8
 

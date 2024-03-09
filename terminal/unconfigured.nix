@@ -49,5 +49,6 @@
     git-lfs
     android-tools
     p7zip
+    libnotify
   ];
 }

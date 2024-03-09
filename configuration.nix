@@ -33,6 +33,7 @@ in {
     ./misc/shell-scripts/extract.nix
     ./misc/shell-scripts/satty-shot.nix
     ./misc/shell-scripts/sha256-from-url.nix
+    ./misc/shell-scripts/llm-actions.nix
     ./misc/default-programs.nix
     ./misc/kernel.nix
     ./services/ollama.nix
