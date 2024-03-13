@@ -55,7 +55,8 @@ in {
           fastfetch
           export PATH="$HOME/.local/bin:$PATH"
           eval $(thefuck --alias)
-
+          # TODO: See if there is better way to set this? Seems not
+          zstyle ':completion:*' menu select
         '';
 
         syntaxHighlighting.enable = true;
