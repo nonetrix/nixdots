@@ -12,11 +12,11 @@
     };
 
     # The main Wayland compositor
-    hyprland.url = "github:hyprwm/Hyprland";
+    hyprland.url = "github:hyprwm/Hyprland/af0c8e299bbbf1726cecfde683137cfd4a6b8642";
 
     # This allows for workspaces to be split with multiple monitors, often breaks with Hyprland updates
     split-monitor-workspaces = {
-      url = "github:bivsk/split-monitor-workspaces/bivsk";
+      url = "github:Duckonaut/split-monitor-workspaces";
       inputs.hyprland.follows = "hyprland";
     };
 
