@@ -14,6 +14,7 @@ in {
     ./terminal/nvim.nix
     ./terminal/unconfigured.nix
     ./terminal/newsboat.nix
+    ./terminal/bat.nix
     ./graphical/wezterm.nix
     ./graphical/tk-themes/gtk.nix
     ./graphical/tk-themes/qt.nix

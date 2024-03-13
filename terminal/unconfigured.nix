@@ -40,9 +40,6 @@
     neofetch
     # Cool Matrix effect
     unimatrix
-    # TODO: Theme this
-    # Better cat command
-    bat
     # Better ls command
     lsd
     # Better grep I guess? It's faster I hear, but only reason really
