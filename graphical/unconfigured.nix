@@ -81,5 +81,7 @@
     libsForQt5.kio-extras
     # A color picker
     hyprpicker
+    # Audio in system tray
+    pasystray
   ];
 }

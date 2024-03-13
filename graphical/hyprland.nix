@@ -131,6 +131,7 @@ in {
         exec-once = wl-clip-persist --clipboard both
         exec-once = waybar
         exec-once = fcitx5
+        exec-once = pasystray
         exec-once = nm-applet
       '';
     };
