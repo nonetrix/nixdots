@@ -11,6 +11,7 @@ in {
   imports = [
     ./hardware-configuration.nix
     ./terminal/zsh.nix
+    ./terminal/neofetch/neofetch.nix
     ./terminal/nvim.nix
     ./terminal/unconfigured.nix
     ./terminal/newsboat.nix

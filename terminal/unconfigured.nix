@@ -86,5 +86,7 @@
     p7zip
     # Lets you make notfications from Bash
     libnotify
+    # Converts images and stuff
+    imagemagick
   ];
 }

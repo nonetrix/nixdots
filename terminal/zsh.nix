@@ -48,7 +48,7 @@ in {
         };
 
         initExtraFirst = ''
-          fastfetch
+          neofetch
           export PATH="$HOME/.local/bin:$PATH"
           eval $(thefuck --alias)
           # TODO: See if there is better way to set this? Seems not
