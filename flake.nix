@@ -12,6 +12,9 @@
     };
 
     # The main Wayland compositor
+    # Remove the commit ID once the following issues are resolved
+    # 1. https://github.com/wez/wezterm/issues/5103
+    # 2. https://github.com/Duckonaut/split-monitor-workspaces/pull/54
     hyprland.url = "github:hyprwm/Hyprland/af0c8e299bbbf1726cecfde683137cfd4a6b8642";
 
     # This allows for workspaces to be split with multiple monitors, often breaks with Hyprland updates
