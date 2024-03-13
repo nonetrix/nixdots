@@ -31,7 +31,7 @@
     # A video editor
     kdenlive
     # A 3D modeling software with ROCm (Radeon Open Compute platform) support
-    #blender-hip
+    blender-hip
     # A Microsoft Office clone
     libreoffice
     # AI based video caption
