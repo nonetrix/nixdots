@@ -1,5 +1,4 @@
 {
-  config,
   pkgs,
   ...
 }: let
@@ -10,7 +9,7 @@ in {
     bemoji # Emoji menu
   ];
 
-  home-manager.users.${global.username} = {pkgs, ...}: {
+  home-manager.users.${global.username} = { ...}: {
     # Catppuccin Mocha Pink theme
     home.file.".config/fuzzel/fuzzel.ini".text = ''
       dpi-aware=no

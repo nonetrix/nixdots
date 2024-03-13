@@ -1,5 +1,4 @@
 {
-  config,
   pkgs,
   ...
 }: let
@@ -31,7 +30,7 @@ in {
     xdg-terminal-exec
   ];
 
-  home-manager.users.${global.username} = {pkgs, ...}: {
+  home-manager.users.${global.username} = { ...}: {
     home.file.".config/xdg-terminals.list".text = ''
       org.wezfurlong.wezterm.desktop
     '';

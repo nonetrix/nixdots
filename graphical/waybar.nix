@@ -1,11 +1,9 @@
 {
-  config,
-  pkgs,
   ...
 }: let
   global = import ../global-var.nix;
 in {
-  home-manager.users.${global.username} = {pkgs, ...}: {
+  home-manager.users.${global.username} = { ...}: {
     programs.waybar = {
       enable = true;
       style = ''

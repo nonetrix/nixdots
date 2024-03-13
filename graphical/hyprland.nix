@@ -1,7 +1,5 @@
 # home.nix
 {
-  config,
-  pkgs,
   inputs,
   ...
 }: let

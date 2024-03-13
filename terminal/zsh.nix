@@ -1,5 +1,4 @@
 {
-  config,
   pkgs,
   ...
 }: let
@@ -19,7 +18,7 @@ in {
     };
   };
 
-  home-manager.users.${global.username} = {pkgs, ...}: {
+  home-manager.users.${global.username} = { ...}: {
     # TODO: change tab menu when selecting files
     programs = {
       # Nice shell prompt

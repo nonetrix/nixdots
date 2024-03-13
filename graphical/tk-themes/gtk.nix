@@ -1,6 +1,4 @@
 {
-  config,
-  pkgs,
   ...
 }: let
   # Import the global variables file

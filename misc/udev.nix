@@ -1,6 +1,4 @@
 {
-  config,
-  pkgs,
   ...
 }: {
   # Needed for OpenRGB to work
