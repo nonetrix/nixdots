@@ -48,8 +48,8 @@
     distrobox
     # Various Vulkan tools for example for showing Vulkan version etc.
     vulkan-tools
-    # Build broke
-    #realesrgan-ncnn-vulkan
+    # Anime upscaler
+    realesrgan-ncnn-vulkan
     # TODO: Find way to get Japanese subs
     # Anime from the seveen seas
     ani-cli
