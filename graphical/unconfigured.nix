@@ -79,9 +79,6 @@
     libsForQt5.ffmpegthumbs
     # Fixes drives in Dolphin?
     libsForQt5.kio-extras
-    # TODO: Remove this when Wezterm gets it's shit together again, only for it to break a week later. Maybe try Cosmic Terminal too ig
-    # A terminal emulator
-    alacritty
     # A color picker
     hyprpicker
   ];
