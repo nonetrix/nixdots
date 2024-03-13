@@ -1,9 +1,7 @@
-{
-  ...
-}: let
+{...}: let
   global = import ../global-var.nix;
 in {
-  home-manager.users.${global.username} = { ...}: {
+  home-manager.users.${global.username} = {...}: {
     # Source: https://twitter.com/ValeforZero/status/1738398453766721944
     home.file = {
       "Pictures/Wallpapers/wallpaper1.jpg" = {

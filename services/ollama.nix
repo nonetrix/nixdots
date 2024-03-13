@@ -1,6 +1,4 @@
-{
-  ...
-}: {
+{...}: {
   services = {
     # Docker like LLM deamon
     ollama.enable = true;

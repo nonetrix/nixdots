@@ -1,6 +1,4 @@
-{
-  ...
-}: let
+{...}: let
   global = import ../global-var.nix;
 in {
   # Allows for containers

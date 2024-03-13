@@ -1,9 +1,7 @@
-{
-  ...
-}: let
+{...}: let
   global = import ../global-var.nix;
 in {
-  home-manager.users.${global.username} = { ...}: {
+  home-manager.users.${global.username} = {...}: {
     programs.wezterm = {
       enable = true;
 

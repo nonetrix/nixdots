@@ -1,7 +1,4 @@
-{
-  pkgs,
-  ...
-}: {
+{pkgs, ...}: {
   i18n.inputMethod = {
     # Allows for Japanese, Chinese, and Korean input
     enabled = "fcitx5";

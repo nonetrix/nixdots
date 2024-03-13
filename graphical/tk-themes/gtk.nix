@@ -1,6 +1,4 @@
-{
-  ...
-}: let
+{...}: let
   # Import the global variables file
   global = import ../../global-var.nix;
 in {

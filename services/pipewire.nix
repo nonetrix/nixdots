@@ -1,6 +1,4 @@
-{
-  ...
-}: {
+{...}: {
   # TODO: Investigate audio crackling
   services.pipewire = {
     enable = true;

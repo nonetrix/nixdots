@@ -1,7 +1,4 @@
-{
-  pkgs,
-  ...
-}: let
+{pkgs, ...}: let
   global = import ../global-var.nix;
 in {
   # TODO: Remove Dolphin shit add desktop file for Yazi call it a day
@@ -30,7 +27,7 @@ in {
     xdg-terminal-exec
   ];
 
-  home-manager.users.${global.username} = { ...}: {
+  home-manager.users.${global.username} = {...}: {
     home.file.".config/xdg-terminals.list".text = ''
       org.wezfurlong.wezterm.desktop
     '';

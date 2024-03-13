@@ -1,8 +1,5 @@
 # home.nix
-{
-  inputs,
-  ...
-}: let
+{inputs, ...}: let
   global = import ../global-var.nix;
 in {
   home-manager.users.${global.username} = {pkgs, ...}: {

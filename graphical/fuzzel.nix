@@ -1,7 +1,4 @@
-{
-  pkgs,
-  ...
-}: let
+{pkgs, ...}: let
   global = import ../global-var.nix;
 in {
   environment.systemPackages = with pkgs; [
@@ -9,7 +6,7 @@ in {
     bemoji # Emoji menu
   ];
 
-  home-manager.users.${global.username} = { ...}: {
+  home-manager.users.${global.username} = {...}: {
     # Catppuccin Mocha Pink theme
     home.file.".config/fuzzel/fuzzel.ini".text = ''
       dpi-aware=no

@@ -1,6 +1,4 @@
-{
-  ...
-}: {
+{...}: {
   home-manager.users.noah = {
     # Catppuccin Mocha
     services.mako = {

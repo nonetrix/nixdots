@@ -1,7 +1,4 @@
-{
-  pkgs,
-  ...
-}: let
+{pkgs, ...}: let
   global = import ../global-var.nix;
 in {
   programs.zsh.enable = true;
@@ -18,7 +15,7 @@ in {
     };
   };
 
-  home-manager.users.${global.username} = { ...}: {
+  home-manager.users.${global.username} = {...}: {
     # TODO: change tab menu when selecting files
     programs = {
       # Nice shell prompt

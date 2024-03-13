@@ -1,7 +1,4 @@
-{
-  pkgs,
-  ...
-}: {
+{pkgs, ...}: {
   systemd = {
     # Pretty much sudo but a GUI prompt, just like sudo likes to have security issues :-)
     user.services.polkit-gnome-authentication-agent-1 = {
