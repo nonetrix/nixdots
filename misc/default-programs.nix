@@ -40,7 +40,7 @@ in {
         "text/html" = ["firefox.desktop"];
         "x-scheme-handler/https" = ["firefox.desktop"];
         "x-scheme-handler/http" = ["firefox.desktop"];
-        "x-terminal-emulator" = ["Alacritty.desktop"];
+        "x-terminal-emulator" = ["org.wezfurlong.wezterm.desktop"];
         "video/mp4" = ["mpv.desktop"];
         "video/webm" = ["mpv.desktop"];
         "video/avi" = ["mpv.desktop"];
