@@ -60,6 +60,7 @@ in {
         nvim-colorizer-lua
         nvim-autopairs
         indent-blankline-nvim
+        nvim-treesitter.withAllGrammars
       ];
     };
   };
