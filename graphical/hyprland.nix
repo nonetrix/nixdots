@@ -15,6 +15,7 @@ in {
         inputs.split-monitor-workspaces.packages.${pkgs.system}.split-monitor-workspaces
       ];
 
+      # TODO: I think there is more home managerery way to do this?
       extraConfig = ''
         $mod = SUPER
 
