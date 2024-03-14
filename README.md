@@ -13,8 +13,7 @@
 ```
 
 ## Installation
-
-# Please note that unless you have a AMD GPU, 165Hz monitor, same username and the same disk name as well you might need to do some hacking
+Please note that unless you have a AMD GPU, 165Hz monitor, same username and the same disk name as well you might need to do some hacking. As of now I haven't rewrote the installion instructions to take flakes into account
 
 # TODO: 
 - Rewrite instructions
