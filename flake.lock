@@ -161,11 +161,11 @@
     },
     "nur": {
       "locked": {
-        "lastModified": 1710355483,
-        "narHash": "sha256-MGYdTEctVmP19adfwmRQ6MrYLdkZIDsZq9pb7yD6dGc=",
+        "lastModified": 1710374855,
+        "narHash": "sha256-KOwtS0XroFu6rww8cFPPAd9dp1Mk2HIIa6/iCKMH2fY=",
         "owner": "nix-community",
         "repo": "NUR",
-        "rev": "1afb6fbae070378ea90fcb289a5e13e355a172a1",
+        "rev": "efa0cb44e8122bb1496dc4e8f09b177b3ed1840f",
         "type": "github"
       },
       "original": {
@@ -201,6 +201,7 @@
       "original": {
         "owner": "Duckonaut",
         "repo": "split-monitor-workspaces",
+        "rev": "d0012b8b0f764e32dd7b82f7a94b8c30197d7dc8",
         "type": "github"
       }
     },

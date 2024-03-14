@@ -19,7 +19,7 @@
 
     # This allows for workspaces to be split with multiple monitors, often breaks with Hyprland updates
     split-monitor-workspaces = {
-      url = "github:Duckonaut/split-monitor-workspaces";
+      url = "github:Duckonaut/split-monitor-workspaces/d0012b8b0f764e32dd7b82f7a94b8c30197d7dc8";
       inputs.hyprland.follows = "hyprland";
     };
 
