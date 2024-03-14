@@ -15,8 +15,8 @@ in {
           };
 
           file = "themes/Catppuccin Mocha.tmTheme";
-       };
-     };
+        };
+      };
 
       config = {
         theme = "catppuccin";
