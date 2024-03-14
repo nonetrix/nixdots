@@ -104,7 +104,7 @@ in {
           gaps_in = 5
           gaps_out = 10
           border_size = 2
-          col.active_border = rgba(f5c2e7ff)
+          col.active_border = rgba(74c7ecff)
           col.inactive_border = rgba(1e1e2eff)
         }
 

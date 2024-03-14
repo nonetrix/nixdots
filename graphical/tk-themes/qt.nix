@@ -10,7 +10,7 @@ in {
   nixpkgs.config.packageOverrides = pkgs: {
     # Selections the variant for installation
     catppuccin-kvantum = pkgs.catppuccin-kvantum.override {
-      accent = "Pink";
+      accent = "Sapphire";
       variant = "Mocha";
     };
   };
@@ -37,12 +37,12 @@ in {
   home-manager.users.${global.username} = {pkgs, ...}: {
     home.file = {
       # Puts theme in right place
-      ".config/Kvantum/Catppuccin-Mocha-Pink".source = "${pkgs.catppuccin-kvantum}/share/Kvantum/Catppuccin-Mocha-Pink";
+      ".config/Kvantum/Catppuccin-Mocha-Sapphire".source = "${pkgs.catppuccin-kvantum}/share/Kvantum/Catppuccin-Mocha-Sapphire";
 
       # Selects the theme in Kvantum
       ".config/Kvantum/kvantum.kvconfig".text = ''
         [General]
-        theme=Catppuccin-Mocha-Pink
+        theme=Catppuccin-Mocha-Sapphire
       '';
 
       # Selects the theme in qt5/6ct, again, I feel like I don't need this really

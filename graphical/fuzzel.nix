@@ -22,8 +22,8 @@ in {
       background=1e1e2ee6
       text=cdd6f4ff
       selection-text=181825ff
-      selection=f5c2e7ff
-      border=f5c2e7ff
+      selection=74c7ecff
+      border=74c7ecff
 
       [border]
       radius=8

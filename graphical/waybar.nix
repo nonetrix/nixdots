@@ -40,7 +40,7 @@ in {
                window#waybar {
         	  /* you can also GTK3 CSS functions! */
          	  background-color: alpha(@base, 0.9);
-         	  border: 2px solid @pink;
+         	  border: 2px solid @sapphire;
                  border-radius: 8px;
                  font-family: "JetBrainsMono Nerd Font";
                  color: @text;

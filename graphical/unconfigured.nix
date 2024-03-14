@@ -11,9 +11,7 @@
     # A PDF viewer
     zathura
     # A image viewer, currently disable due to CVEs
-    #imv
-    # A image viewer
-    oculante
+    imv
     # A video player
     mpv
     # A archive viewer, might replace

@@ -16,6 +16,7 @@ in {
         set ttyfast
         set termguicolors
         set expandtab
+        set cmdheight=0
         colorscheme catppuccin-mocha
       '';
 

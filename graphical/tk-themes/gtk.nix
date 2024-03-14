@@ -22,9 +22,9 @@ in {
 
       # Theme configuration
       theme = {
-        name = "Catppuccin-Mocha-Standard-Pink-Dark";
+        name = "Catppuccin-Mocha-Standard-Sapphire-Dark";
         package = pkgs.catppuccin-gtk.override {
-          accents = ["pink"];
+          accents = ["sapphire"];
           variant = "mocha";
         };
       };
