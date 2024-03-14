@@ -18,4 +18,3 @@ Please note that unless you have a AMD GPU, 165Hz monitor, same username and the
 - Write config for server and phone via termux fork and flakes
 - Organize code
 - Generally clean code 
-- Check that comment style is consistent e.g. same wording
