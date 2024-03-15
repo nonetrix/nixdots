@@ -1,3 +1,4 @@
+# Nixdots
 This repository contains my NixOS system configurations. It is not meant to be for everyone or really anyone but myself. I would not recommend running it. Instead, feel free to take things that you like from it. However, you are free to run it anyway; just don't expect support outside of bug fixes. If something doesn't work the way you want it, that is your problem unless I agree that it is a problem. That being said, I do welcome suggestions. If you find a program or config that I might like, please tell me about it in issues. Note that I may not use it as it is made for my preferences, not yours.
 
 ![Screenshot of configs as of Fri Mar 15 01:15:58 AM CDT 2024](./img/screenshot.png)
