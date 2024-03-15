@@ -120,6 +120,8 @@ in {
         }
 
         windowrulev2 = noanim, class:^(com.gabm.satty)$
+        animation = workspaces, 1, 5, default, slidevert
+        animation= windows, 1, 5, default, slide
         layerrule = ignorealpha, waybar
         layerrule = ignorealpha, launcher
 
