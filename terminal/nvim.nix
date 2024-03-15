@@ -51,6 +51,12 @@ in {
 
         vim.api.nvim_create_autocmd("VimEnter", { callback = open_nvim_tree })
         vim.api.nvim_create_autocmd("TabEnter", { callback = open_nvim_tree })
+
+        
+        if vim.g.neovide then
+          vim.o.guifont = "JetBrainsMono Nerd Font:h12" 
+          vim.g.neovide_transparency = 0.9
+        end
       '';
 
       plugins = with pkgs.vimPlugins; [

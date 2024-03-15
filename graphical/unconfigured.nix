@@ -81,5 +81,7 @@
     hyprpicker
     # Audio in system tray
     pasystray
+    # Graphical Neovim client
+    neovide
   ];
 }
