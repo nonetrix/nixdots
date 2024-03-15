@@ -56,7 +56,7 @@ in {
         '';
 
         syntaxHighlighting.enable = true;
-        enableAutosuggestions = true;
+        autosuggestion.enable = true;
         zplug = {
           enable = true;
           plugins = [
