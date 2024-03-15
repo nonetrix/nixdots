@@ -55,6 +55,7 @@ in {
           margin-right = 10;
           height = 30;
           layer = "top";
+          position = "bottom";
           modules-left = ["hyprland/workspaces"];
           modules-center = ["hyprland/window"];
           modules-right = ["tray" "clock"];
