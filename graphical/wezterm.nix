@@ -25,12 +25,12 @@ in {
         },
 
         wezterm.plugin.require("https://github.com/nekowinston/wezterm-bar").apply_to_config(config, {
-          position = "bottom",
+          position = "top",
           max_width = 32,
           dividers = "slant_right", -- or "slant_left", "arrows", "rounded", false
           indicator = {
             leader = {
-              enabled = true,
+              enabled = false,
               off = " ",
               on = " ",
             },
@@ -52,7 +52,7 @@ in {
             },
           },
           clock = { -- note that this overrides the whole set_right_status
-            enabled = true,
+            enabled = false,
             format = "%H:%M", -- use https://wezfurlong.org/wezterm/config/lua/wezterm.time/Time/format.html
           },
         })
