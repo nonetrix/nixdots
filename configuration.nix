@@ -44,7 +44,6 @@ in {
     ./services/docker.nix
     ./services/xdg-portal.nix
     ./services/flatpak.nix
-    ./services/usb-automount.nix
     ./services/bluetooth.nix
     ./services/keyring.nix
     ./services/sshd.nix
