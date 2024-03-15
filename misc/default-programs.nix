@@ -60,8 +60,8 @@ in {
         "image/svg" = ["imv.desktop"];
         "image/gif" = ["imv.desktop"];
         "inode/directory" = ["org.kde.dolphin.desktop"];
-        "text/plain" = ["nvim.desktop"];
-        "text/reg" = ["nvim.desktop"];
+        "text/plain" = ["neovide.desktop"];
+        "text/reg" = ["neovide.desktop"];
         "application/zip" = ["org.kde.ark.desktop"];
         "application/x-7z-compressed" = ["org.kde.ark.desktop"];
         "application/x-tar" = ["org.kde.ark.desktop"];

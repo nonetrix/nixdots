@@ -27,6 +27,7 @@ in {
     ./graphical/unconfigured.nix
     ./graphical/steam.nix
     ./graphical/wpaperd.nix
+    ./graphical/neovide.nix
     ./amd-gpu.nix
     ./misc/udev.nix
     ./misc/ntp.nix

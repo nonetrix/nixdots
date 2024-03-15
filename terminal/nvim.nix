@@ -17,10 +17,11 @@ in {
         set termguicolors
         set expandtab
         set cmdheight=0
-        colorscheme catppuccin-mocha
       '';
 
       extraLuaConfig = ''
+        vim.cmd.colorscheme "catppuccin"
+
         require('nvim-tree').setup {
           tab = { sync = { open = true, close = true, ignore = {} } },
         }
