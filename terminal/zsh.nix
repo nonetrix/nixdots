@@ -11,6 +11,7 @@ in {
     variables = {
       MOZ_ENABLE_WAYLAND = "1";
       EDITOR = "nvim";
+      # TODO: Try to find another way to replace less with nvim... All pagers are fucking ass dear God might as well make my own
       MANPAGER = "nvim +Man!";
       NIXOS_OZONE_WL = "1";
     };
