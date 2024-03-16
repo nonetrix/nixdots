@@ -11,6 +11,7 @@ in {
     variables = {
       MOZ_ENABLE_WAYLAND = "1";
       EDITOR = "nvim";
+      MANPAGER = "nvim +Man!";
       NIXOS_OZONE_WL = "1";
     };
   };
