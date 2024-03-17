@@ -55,8 +55,7 @@ in {
 
       settings = [
         {
-          margin-top = 4;
-          margin-bottom = 4;
+          margin-bottom = 8;
           margin-left = 10;
           margin-right = 10;
           height = 30;
