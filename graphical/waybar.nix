@@ -61,6 +61,9 @@ in {
           height = 30;
           layer = "top";
           position = "bottom";
+          clock = {
+            format = "{:%I:%M %p}";
+          };
           modules-left = ["hyprland/workspaces"];
           modules-center = ["hyprland/window"];
           modules-right = ["tray" "clock"];
