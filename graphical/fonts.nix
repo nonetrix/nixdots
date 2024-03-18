@@ -11,5 +11,7 @@
 
     # Should help some aplications find fonts
     fontDir.enable = true;
+    fontconfig.hinting.style = "medium";
+    fontconfig.subpixel.rgba = "rgb";
   };
 }
