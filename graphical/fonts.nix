@@ -1,4 +1,15 @@
-{pkgs, ...}: {
+{pkgs, ...}: let
+  global = import ../global-var.nix;
+in {
+  home-manager.users.${global.username} = {...}: {
+    dconf.settings = {
+      "org/gnome/desktop/interface" = {
+        font-antialiasing = "rgba";
+        font-hinting = "slight";
+      };
+    };
+  };
+
   fonts = {
     packages = with pkgs; [
       noto-fonts
@@ -11,7 +22,8 @@
 
     # Should help some aplications find fonts
     fontDir.enable = true;
-    fontconfig.hinting.style = "medium";
-    fontconfig.subpixel.rgba = "rgb";
+    fontconfig.hinting.style = "slight";
+    fontconfig.subpixel.rgba = "rgb";  
+
   };
 }
