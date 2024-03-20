@@ -61,8 +61,6 @@
     alejandra
     # Interact with clipboard from commandline
     wl-clipboard
-    # Removes annoying behavior where clipboard clears after closing program
-    wl-clip-persist
     # Calculator
     bc
     # Let's you see used disk space
