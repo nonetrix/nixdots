@@ -115,10 +115,51 @@ in {
         };
       };
 
+      # Kiki
+      # Cry about it Niccolò Vé
+
+      # Source: https://krita.org/en/about/mascot/
+      # Source: https://web.archive.org/web/20240315033826/https://krita.org/en/about/mascot/
+
+      "Pictures/Wallpapers/wallpaper14.png" = {
+        source = builtins.fetchurl {
+          url = "cdn.kde.org/krita/marketing/kiki/electrichearts_20201224A_kiki_c1.png";
+          sha256 = "054lvm1cm40ygw78xqd4abqkf75r3i68qxhnm81kakc5fbgzpfsw";
+        };
+      };
+
+      "Pictures/Wallpapers/wallpaper15.png" = {
+        source = builtins.fetchurl {
+          url = "https://cdn.kde.org/krita/marketing/kiki/mascot_20150812_kiki_scott_cover_f.png";
+          sha256 = "0x0bfnzxd63w2g35q7rckx52g45mvjw8xkrzsxwrr4rqnwfanrqb";
+        };
+      };
+
+      "Pictures/Wallpapers/wallpaper16.png" = {
+        source = builtins.fetchurl {
+          url = "https://cdn.kde.org/krita/marketing/kiki/electrichearts_20200221A_kiki_b.png";
+          sha256 = "1ivy6pxkrbx7anagkwmxmqvmqlqmpm25y9ydz2zi5r9kdv2xinad";
+        };
+      };
+
+      "Pictures/Wallpapers/wallpaper17.png" = {
+        source = builtins.fetchurl {
+          url = "https://cdn.kde.org/krita/marketing/kiki/electrichearts_20171205_kiki_c.png";
+          sha256 = "0ppxlvyr62fpg9jvhxk74xgg25i6xa3pbc79dzacj04f9pxnbfgh";
+        };
+      };
+
+      "Pictures/Wallpapers/wallpaper18.png" = {
+        source = builtins.fetchurl {
+          url = "https://cdn.kde.org/krita/marketing/kiki/electrichearts_20160517_20160820_kiki_02.png";
+          sha256 = "1ywid05jshriv6d4jwg9w0c18smx87nixwy1v4lvkykga4q2v7bb";
+        };
+      };
+
       # Astolfo
 
       # Source: https://gelbooru.com/index.php?page=post&s=view&id=7824618&tags=astolfo_%28fate%29+rating%3Ageneral
-      "Pictures/Wallpapers/wallpaper15.jpg" = {
+      "Pictures/Wallpapers/wallpaper19.jpg" = {
         source = builtins.fetchurl {
           url = "https://img3.gelbooru.com/images/96/41/964105d020a4a7b6c0599cfbaeb6ccb4.jpg";
           sha256 = "8f36facb2ea3e4efe8aca4e7b00f8a133d1367e5cefc1a5b71624dae7c3860d0";
@@ -126,7 +167,7 @@ in {
       };
 
       # Source: https://gelbooru.com/index.php?page=post&s=view&id=7854963&tags=astolfo_%28fate%29+rating%3Ageneral
-      "Pictures/Wallpapers/wallpaper16.jpg" = {
+      "Pictures/Wallpapers/wallpaper20.jpg" = {
         source = builtins.fetchurl {
           url = "https://img3.gelbooru.com/images/9f/0c/9f0c0c1990da1501417754cd10322597.jpg";
           sha256 = "474bd3393d945133764bce46d7f9fc6aeb0574bde5408beb06248645031e01a8";

@@ -91,5 +91,7 @@
     # Lets me open stuff etc.
     # TODO: For some reason xdg-open likes to ask me what to open files with despite the fact that it set, but it does seem to at least select the program in xdg settings by default just have to select it
     xdg-utils
+    # Allows for you to control things relating to the TTY
+    kbd
   ];
 }
