@@ -16,7 +16,7 @@ in {
     ./terminal/unconfigured.nix
     ./terminal/newsboat.nix
     ./terminal/bat.nix
-    ./graphical/wezterm.nix
+    ./graphical/kitty.nix
     ./graphical/tk-themes/gtk.nix
     ./graphical/tk-themes/qt.nix
     ./graphical/hyprland.nix
@@ -43,7 +43,7 @@ in {
     ./services/polkit.nix
     ./services/docker.nix
     ./services/xdg-portal.nix
-    ./services/flatpak.nix
+    #./services/flatpak.nix
     ./services/bluetooth.nix
     ./services/keyring.nix
     ./services/sshd.nix

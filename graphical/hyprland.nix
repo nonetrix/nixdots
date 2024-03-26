@@ -76,13 +76,12 @@ in {
 
         # Programs
         bind = $mod, B, exec, firefox
-        # Wezterm broken for now :(
-        bind = $mod, Return, exec, wezterm
+        bind = $mod, Return, exec, kitty
 
         bind = $mod, Space, exec, fuzzel
         bind = $mod, E, exec, BEMOJI_PICKER_CMD='fuzzel -p 🔍  -d' bemoji
 
-        bind = $mod, a, exec, wezterm -e ollama run mixtral
+        bind = $mod, a, exec, kitty -e ollama run mixtral
         bind = $mod SHIFT, a, exec, llm-actions
 
         decoration {

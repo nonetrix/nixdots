@@ -47,9 +47,9 @@
     # Container manager
     distrobox
     # Various Vulkan tools for example for showing Vulkan version etc.
-    vulkan-tools
+    #vulkan-tools
     # Anime upscaler
-    realesrgan-ncnn-vulkan
+    #realesrgan-ncnn-vulkan
     # TODO: Find way to get Japanese subs
     # Anime from the seveen seas
     ani-cli
@@ -91,5 +91,7 @@
     xdg-utils
     # Allows for you to control things relating to the TTY
     kbd
+    # Allows extacting rar stuff
+    unrar-wrapper
   ];
 }

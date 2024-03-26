@@ -3,7 +3,7 @@
     # A audio settings app in GTK
     pavucontrol
     # A web browser
-    ungoogled-chromium
+    brave
     # Flash card program
     anki-bin
     # A unoffical YouTube client
@@ -83,5 +83,7 @@
     pasystray
     # Graphical Neovim client
     neovide
+    # Terminal
+    foot
   ];
 }

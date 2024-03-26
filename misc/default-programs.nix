@@ -29,7 +29,7 @@ in {
 
   home-manager.users.${global.username} = {...}: {
     home.file.".config/xdg-terminals.list".text = ''
-      org.wezfurlong.wezterm.desktop
+      kitty.desktop
     '';
 
     # Sets default apps
@@ -40,7 +40,7 @@ in {
         "text/html" = ["firefox.desktop"];
         "x-scheme-handler/https" = ["firefox.desktop"];
         "x-scheme-handler/http" = ["firefox.desktop"];
-        "x-terminal-emulator" = ["org.wezfurlong.wezterm.desktop"];
+        "x-terminal-emulator" = ["kitty.desktop"];
         "video/mp4" = ["mpv.desktop"];
         "video/webm" = ["mpv.desktop"];
         "video/avi" = ["mpv.desktop"];

@@ -11,15 +11,12 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    # The main Wayland compositor
-    # Remove the commit ID once the following issues are resolved
-    # 1. https://github.com/wez/wezterm/issues/5103
-    # 2. https://github.com/Duckonaut/split-monitor-workspaces/pull/54
-    hyprland.url = "github:hyprwm/Hyprland/af0c8e299bbbf1726cecfde683137cfd4a6b8642";
+    hyprland.url = "github:hyprwm/Hyprland";
 
+    # TODO: Remove fork once merged
     # This allows for workspaces to be split with multiple monitors, often breaks with Hyprland updates
     split-monitor-workspaces = {
-      url = "github:Duckonaut/split-monitor-workspaces/d0012b8b0f764e32dd7b82f7a94b8c30197d7dc8";
+      url = "github:chriselrod/split-monitor-workspaces/patch-1";
       inputs.hyprland.follows = "hyprland";
     };
 

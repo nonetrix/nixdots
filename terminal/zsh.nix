@@ -4,10 +4,6 @@ in {
   programs.zsh.enable = true;
 
   environment = {
-    systemPackages = with pkgs; [
-      thefuck
-    ];
-
     variables = {
       MOZ_ENABLE_WAYLAND = "1";
       EDITOR = "nvim";
@@ -52,7 +48,6 @@ in {
         initExtraFirst = ''
           neofetch
           export PATH="$HOME/.local/bin:$PATH"
-          eval $(thefuck --alias)
           # TODO: See if there is better way to set this? Seems not
           zstyle ':completion:*' menu select
         '';
