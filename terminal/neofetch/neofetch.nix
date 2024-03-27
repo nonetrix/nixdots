@@ -2,8 +2,6 @@
   global = import ../../global-var.nix;
 in {
   home-manager.users.${global.username} = {...}: {
-    #home.file.".config/neofetch/fetch.png".source = ./fetch.png;
-
     home.file.".config/neofetch/config.conf".text = ''
           print_info () {
           prin "🌟 ♥𖹭♥♥❤❤♥❤𖹭❤𖹭❤𖹭❤❤❤𖹭𖹭❤♥❤𖹭𖹭♥❤♥♥♥♥❤𖹭❤❤𖹭𖹭♥𖹭♥❤♥❤♥❤𖹭𖹭♥❤♥❤❤❤❤𖹭❤❤𖹭 ✨"

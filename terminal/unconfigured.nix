@@ -11,7 +11,7 @@
     # SHows system stats e.g. CPU usage, memory usage
     btop
     # Shows GPU usage stats
-    nvtop-amd
+    nvtopPackages.amd
     # Makes games go broom broom? Doesn't seem to have a effect, but why not?
     gamemode
     # Downloads things

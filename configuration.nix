@@ -43,7 +43,7 @@ in {
     ./services/polkit.nix
     ./services/docker.nix
     ./services/xdg-portal.nix
-    #./services/flatpak.nix
+    ./services/flatpak.nix
     ./services/bluetooth.nix
     ./services/keyring.nix
     ./services/sshd.nix
