@@ -43,6 +43,7 @@ in {
           "forecast" = "curl wttr.in";
           "umatrix" = "unimatrix";
           "gsrun" = "gamescope -W 1920 -H 1080 -r 165";
+          "neovideo" = "neovide";
         };
 
         initExtraFirst = ''
